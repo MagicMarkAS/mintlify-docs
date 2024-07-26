@@ -1,241 +1,160 @@
 ---
-title: 'Designing you agent'
-description: 'Heres a guide on how to design your agent with outstanding and undeniable glow.'
+title: 'Designing Your Agent'
+description: 'A comprehensive guide on how to design your agent with outstanding and undeniable glow.'
 ---
 
+#
 
+## 1. Overview
 
+The Overview section allows you to customize your agent to fit your client's branding and your agency's style.
 
-# 1. Overview 
+### Title
 
-  
+The name of your agent. 
 
-The Overview section allows you to customize your agent fit for your clients branding and your agency. 
+Example: `GymBuddy GPT`
 
-  
+### Description
 
-**Title**: The name of your agent. Example: GymBuddy GPT 
+A brief description of your agent. Include branding information and links if necessary.
 
-  
+Example:
+```
+⚡Powered by [YOUR AGENCY]⚡
+```
 
-**Description**: A brief description of your agent. Include branding information, and links if necessary. 
+To add a link, use a colon behind the word you want to hyperlink:
+```
+⚡Powered by YOUR AGENCY:youragency.com⚡
+```
 
-  
+## 2. Appearance
 
-Example: ⚡Powered by [YOUR AGENCY]⚡ 
+Customize the look and feel of your agent to match your brand.
 
-  
+### Font Family
 
-To add a link, simply use a semi colon behind the word you want to hyperlink:   
+**Font Name**: Choose from any Google Font. 
 
-⚡Powered by YOUR AGENCY:youragency.com⚡ 
+Example: `DM Sans`
 
-  
+<Callout type="info">
+  Check out all the fonts available for free here: [Browse Fonts - Google Fonts](https://fonts.google.com/)
+</Callout>
 
-# 2. Appearance 
+**Inherit Font**: Type "inherit" to use the same font as your webpage.
 
-  
+<Callout type="warning">
+  Not recommended, as this may break the agent – use at your own risk.
+</Callout>
 
-Customize the look and feel of your agent to match your brand. 
+<Tip>
+  You can change the fonts of specific parts (like header and input field) using custom CSS.
+</Tip>
 
-  
+### Widget Language
 
-## Font Family 
+**Language Code**: Glowstudio uses ISO 639-1 language codes to set the language. 
 
-  
+Example: English will be `en`.
 
-**Font Name**: Choose from any Google Font. Example: DM Sans. Check out all the fonts available for free here: [Browse Fonts - Google Fonts](https://fonts.google.com/). 
+<Callout type="info">
+  See complete reference here: [List of ISO 639 language codes - Wikipedia](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
+</Callout>
 
-  
+**Automatic Translation**: Labels and placeholders will be automatically translated to your chosen language. (Title and branding will keep their original language and text. Change those manually to your preferred language)
 
-**Inherit Font**: Type "inherit" to use the same font as your webpage (Not recommended, as this may break agent – use at your own risk). 
+### Buttons Layout
 
-  
+Customize the layout and look of the buttons used in your agent's interface. There are three options to consider:
 
-<Tip>You can change the fonts of specific parts (like header and input field) using custom CSS.</Tip> 
+<Tabs>
+  <Tab title="Vertical">
+    Vertical (standard)
 
-  
+    <img src="/images/vertical_buttons.png" class="rounded-md" width="300"></img>
 
-## Widget Language 
+  </Tab>
+  <Tab title="Horizontal">
+    Horizontal
+  </Tab>
+  <Tab title="In footer">
+    In footer
+  </Tab>
+</Tabs>
 
-  
+## 3. Launch Avatar
 
-**Language Code**: Glowstudio uses ISO 639-1 language codes to set the language. Example: English will be en. See complete reference here: [List of ISO 639 language codes - Wikipedia](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) 
+Set the images that will represent your agent visually.
 
-  
+<Callout type="note">
+  You can either upload an image or provide a valid image link/url. The max size is: 0.5MB per image. We recommend using a square image with at least 400px x 400px for optimal clarity.
+</Callout>
 
-**Automatic Translation**: Labels and placeholders will be automatically translated to your chosen language. (title and branding will keep their original language and text. Change those manually to your preferred language) 
+<AccordionGroup>
+  <Accordion title="Launch Avatar Image">
+    Image for the chat bubble. Setting this image alone will default to all other images on the widget except background.
+  </Accordion>
+  <Accordion title="Header Image">
+    Chat icon in the top left corner of the agent.
+  </Accordion>
+  <Accordion title="Banner Image">
+    Display image at the top of the chat.
+  </Accordion>
+  <Accordion title="Chat Avatar">
+    Main image for the agent's chat messages.
+  </Accordion>
+  <Accordion title="Background Chat Image">
+    Background for the chat section of the widget. This background has a low default opacity and might not be as visible if the image is very light. Settings can be modified with custom CSS.
+  </Accordion>
+</AccordionGroup>
 
-  
+## 4. Custom Theme
 
-## Buttons Layout 
+Personalize your agent's color scheme to align with your brand.
 
-  
+### Preset themes
 
-Customize the layout and look of the buttons used in your agent’s interface. There are three options to consider: 
+You can choose between six predefined themes that work in both light and dark mode.
 
-  
+<Tip>
+  You can set your agent to light or dark mode. This is nice for clients with darker websites as the agent will fit right in to the branding.
+</Tip>
 
-<Tabs> 
+### Autogen Theme from Color
 
-  <Tab title="Vertical"> 
+Recommended: Automatically generate a theme based on your primary color.
 
-    Vertical (standard) 
+<Callout type="warning">
+  Visibility Note: Ensure white text on top of the primary color is clearly visible and experiment with all kinds of color combinations.
+</Callout>
 
-  </Tab> 
+### Manual Set Theme Colors
 
-  <Tab title="Horizontal"> 
+**Custom Colors**: Manually input your theme colors using HEX codes or the color palettes available in the designer.
 
-    Horizontal 
+Example: `#F34534`
 
-  </Tab> 
+<Tip>
+  All colors and elements can be modified using custom CSS.
+</Tip>
 
-  <Tab title="In footer"> 
+## Showcasing the agent
 
-    In footer 
+It's essential to know how the agent behaves and looks before letting a client test it. Glowstudio has two options for testing, right from the agent designer.
 
-  </Tab> 
+1. **Prototype**: Your clients will want to test a demo of their agent. Using the prototype link is a great way to do that. If you have whitelabeling included in your tier, the link will have your custom domain and branding!
 
-</Tabs> 
+2. **Demo**: It's not always easy to visualize how the agent will look on a website. The demo link lets you test it out in chat bubble format, so you get an idea of how the client will experience it on their website.
 
-  
+### Additional Tips
 
-# 3. Launch Avatar 
+- **Save Regularly**: Remember to always save your progress to prevent the loss of your beautiful designs.
+- **Thorough Testing**: Test your agent thoroughly to ensure all settings and features are working as intended.
 
-  
+## Example: GymBuddy GPT
 
-Set the images that will represent your agent visually. 
+Here is a test of the agent used in the guide above. Give it a try:
 
-  
-
-<Callout note="You can either upload an image or provide a valid image link/url. The max size is: 0.5MB per image. We recommend using a square image with at least 400px x 400px for optimal clarity"></Callout> 
-
-  
-
-<AccordionGroup> 
-
-  <Accordion title="Launch Avatar Image"> 
-
-    Launch Avatar Image: Image for the chat bubble. Setting this image alone will default to all other images on the widget except background. 
-
-  </Accordion> 
-
-  
-
-  <Accordion title="Header Image"> 
-
-    Header Image: Chat icon in the top left corner of the agent. 
-
-  </Accordion> 
-
-  
-
-  <Accordion title="Banner Image"> 
-
-    Banner Image: Display image at the top of the chat. 
-
-  </Accordion> 
-
-  
-
-  <Accordion title="Chat Avatar"> 
-
-    Chat Avatar: Main image for the agents chat messages. 
-
- 
-
-  </Accordion> 
-
-  
-
-  <Accordion title="Background Chat Image"> 
-
-    Background Chat Image: Background for the chat section of the widget. This background has a low default opacity and might not be as visible if the image is very light. Settings can be modified with custom CSS. Check out the CSS library here. 
-
-  </Accordion> 
-
-</AccordionGroup> 
-
-  
-
-# 4. Custom Theme 
-
-  
-
-Personalize your agent’s color scheme to align with your brand. 
-
-  
-
-## Preset themes 
-
-  
-
-You can choose between six predefined themes that work in both light and dark mode. 
-
-  
-
-<Tip>You can set your agent to light or dark mode. This is nice for clients with darker websites as the agent will fit right in to the branding</Tip> 
-
-  
-
-## Autogen Theme from Color 
-
-  
-
-Recommended: Automatically generate a theme based on your primary color. 
-
-  
-
-<Note>Visibility Note: Ensure white text on top of the primary color is clearly visible and experiment with all kinds of color combinations.</Note> 
-
-  
-
-## Manual Set Theme Colors 
-
-  
-
-**Custom Colors**: Manually input your theme colors using HEX codes or the color palettes available in the designer. 
-
-  
-
-Example: #F34534 
-
-  
-
-<Tip>All colors and elements can be modified using custom CSS.</Tip> 
-
-  
-
-# Showcasing the agent 
-
-  
-
-It's essential to know how the agent behaves and looks before letting a client test it. Glowstudio has two options for testing, right from the agent designer. 
-
-  
-
-**Prototype**: Your clients will want to test a demo of their agent. Using the prototype link is a great way to do that. If you have whitelabeling included in your tier, the link will have your custom domain and branding! 
-
-  
-
-**Demo**: It's not always easy to visualize how the agent will look on a website. The demo link lets you test it out in chat bubble format, so you get an idea of how the client will experience it on their website. 
-
-  
-
-## Additional Tips 
-
-  
-
-**Save Regularly**: Remember to always save your progress to prevent the loss of your beautiful designs. 
-
-  
-
-**Thorough Testing**: Test your agent thoroughly to ensure all settings and features are working as intended. 
-
-
-### GymBuddy GPT
-
-Here is a test of the agent used in the guide above, give it a try:
- 
-<iframe src="https://voiceglow.org/app/eu/render/u30gm48l0xkthh1/iframe" width="400" height="600" class="rounded-md"> </iframe>
- 
+<iframe src="https://voiceglow.org/app/eu/render/u30gm48l0xkthh1/iframe" width="400" height="600" className="rounded-md" />
