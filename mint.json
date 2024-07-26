@@ -1,24 +1,19 @@
 {
   "$schema": "https://mintlify.com/schema.json",
   "name": "GlowStudio.ai Documentation",
-  "backgroundImage": "/images/transparent_bg_mintlify.png",
-  "theme": "prism",
+  "backgroundImage": "/images/transaparent_bg_mintlify.png",
   "logo": {
-    "dark": "/logo/GlowStudio.ai_logo_white.png",
-    "light": "/logo/GlowStudio.ai_logo_black.png"
+    "dark": "/logo/GlowStudio.ai_mintlify_banner.png",
+    "light": "/logo/GlowStudio.ai_mintlify_banner.png"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#A020F0",
-    "light": "#B24BF3",
-    "dark": "#8010C0",
-    "background": {
-      "dark": "#111111",
-      "light": "#ffffff"
-    },
+    "primary": "#0D9373",
+    "light": "#07C983",
+    "dark": "#0D9373",
     "anchors": {
-      "from": "#A020F0",
-      "to": "#FF00FF"
+      "from": "#0D9373",
+      "to": "#07C983"
     }
   },
   "topbarLinks": [
@@ -60,39 +55,94 @@
       "pages": [
         "introduction",
         "quickstart",
-        "development"
+        "key-concepts"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Agent Creation",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "agent-creation/overview",
+        "agent-creation/ui-engine",
+        {
+          "group": "Knowledgebase",
+          "pages": [
+            "agent-creation/knowledgebase/overview",
+            "agent-creation/knowledgebase/file-upload",
+            "agent-creation/knowledgebase/web-scraping"
+          ]
+        },
+        "agent-creation/system-instructions",
+        "agent-creation/initial-prompt",
+        "agent-creation/initial-message"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Features",
       "pages": [
-        "api-reference/introduction"
+        "features/ai-models",
+        "features/conversations",
+        "features/live-handoff",
+        "features/analytics",
+        "features/voice-to-voice",
+        "features/tools-integration"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Whitelabeling",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "whitelabeling/overview",
+        {
+          "group": "Agency and Clients",
+          "pages": [
+            "whitelabeling/agency-and-clients/setup",
+            "whitelabeling/agency-and-clients/management"
+          ]
+        },
+        {
+          "group": "Client Dashboard",
+          "pages": [
+            "whitelabeling/client-dashboard/features",
+            "whitelabeling/client-dashboard/customization"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Integration",
+      "pages": [
+        "integration/deployment",
+        "integration/voiceflow",
+        "integration/crawler",
+        "integration/channels"
+      ]
+    },
+    {
+      "group": "API Reference",
+      "pages": [
+        "api-reference/introduction",
+        "api-reference/authentication",
+        "api-reference/endpoints"
+      ]
+    },
+    {
+      "group": "Pricing",
+      "pages": [
+        "pricing/plans",
+        "pricing/billing"
+      ]
+    },
+    {
+      "group": "Support",
+      "pages": [
+        "support/faq",
+        "support/troubleshooting",
+        "support/contact"
       ]
     }
   ],
   "footerSocials": {
-    "youtube": "https://www.youtube.com/@GlowStudio.ai",
     "twitter": "https://twitter.com/glowstudio_ai",
-    "linkedin": "https://www.linkedin.com/company/glowstudio-ai",
-    "discord": "https://discord.gg/glowstudio"
+    "github": "https://github.com/glowstudio-ai",
+    "linkedin": "https://www.linkedin.com/company/glowstudio-ai"
   }
 }
