@@ -1,19 +1,22 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
-  "theme": "prism",
+  "name": "GlowStudio.ai Documentation",
   "logo": {
-    "dark": "/logo/GlowStudio.ai_mintlify_banner.png",
-    "light": "/logo/light.svg"
+    "dark": "/logo/GlowStudio.ai_logo_white.png",
+    "light": "/logo/GlowStudio.ai_logo_black.png"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
-    "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+    "primary": "#A020F0",
+    "light": {
+      "primary": "#A020F0",
+      "background": "#ffffff",
+      "dark": "#8010C0"
+    },
+    "dark": {
+      "primary": "#B24BF3",
+      "background": "#111111",
+      "light": "#B24BF3"
     }
   },
   "topbarLinks": [
@@ -24,7 +27,7 @@
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://dashboard.glowstudio.ai"
   },
   "tabs": [
     {
@@ -36,17 +39,17 @@
     {
       "name": "Documentation",
       "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "url": "https://glowstudio.ai/docs"
     },
     {
       "name": "Community",
       "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "url": "https://glowstudio.ai/community"
     },
     {
       "name": "Blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://glowstudio.ai/blog"
     }
   ],
   "navigation": [
@@ -83,10 +86,13 @@
         "api-reference/endpoint/delete"
       ]
     }
-  ],
+    ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
-  }
+    "youtube": "https://www.youtube.com/@GlowStudio.ai",
+    "twitter": "https://twitter.com/glowstudio_ai",
+    "linkedin": "https://www.linkedin.com/company/glowstudio-ai",
+    "discord": "https://discord.gg/glowstudio"
+  },
+  "style": "/styles/custom.css"
 }
+  
