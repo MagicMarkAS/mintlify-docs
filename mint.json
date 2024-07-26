@@ -1,19 +1,19 @@
 {
   "$schema": "https://mintlify.com/schema.json",
   "name": "GlowStudio.ai Documentation",
-  "backgroundImage": "/images/transaparent_bg_mintlify.png",
+  "backgroundImage": "/images/transparent_bg_mintlify.png",
   "logo": {
     "dark": "/logo/GlowStudio.ai_mintlify_banner.png",
     "light": "/logo/GlowStudio.ai_mintlify_banner.png"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#A020F0",
+    "light": "#B24BF3",
+    "dark": "#8010C0",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#A020F0",
+      "to": "#FF00FF"
     }
   },
   "topbarLinks": [
