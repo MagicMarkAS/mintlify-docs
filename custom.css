@@ -1,22 +1,15 @@
 /* Light mode styles */
 :root {
   --background-image: url('/images/transparent_bg_mintlify.png');
-  --background-color: rgba(255, 255, 255, 0.9);
   --text-color: #333333;
   --link-color: #A020F0;
 }
 
 /* Dark mode styles */
-[data-theme='dark'] {
+html[data-theme='dark'] {
   --background-image: url('/images/transparent_bg_mintlify.png');
-  --background-color: rgba(17, 17, 17, 0.9);
   --text-color: #ffffff;
   --link-color: #B24BF3;
-}
-
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
 }
 
 body::before {
@@ -34,11 +27,10 @@ body::before {
   z-index: -1;
 }
 
-a {
-  color: var(--link-color);
+body {
+  color: var(--text-color);
 }
 
-/* Ensure content containers have appropriate background */
-.nextra-container, .nextra-sidebar-container, .nextra-nav-container {
-  background-color: var(--background-color);
+a {
+  color: var(--link-color);
 }
