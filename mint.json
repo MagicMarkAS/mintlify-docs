@@ -6,7 +6,7 @@
     "dark": "/logo/GlowStudio.ai_logo_white.png",
     "light": "/logo/GlowStudio.ai_logo_black.png"
   },
-  "favicon": "/favicon.png",
+  "favicon": "/favicon.svg",
   "colors": {
     "primary": "#A020F0",
     "light": "#B24BF3",
