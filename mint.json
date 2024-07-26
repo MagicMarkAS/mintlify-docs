@@ -40,7 +40,7 @@
     },
     {
       "name": "Community",
-      "icon": "slack",
+      "icon": "discord",
       "url": "https://glowstudio.ai/community"
     },
     {
@@ -62,7 +62,10 @@
       "group": "Agent Creation",
       "pages": [
         "agent-creation/overview",
-        "agent-creation/ui-engine",
+        "agent-creation/design and setup",
+        "agent-creation/system-instructions",
+        "agent-creation/initial-prompt",
+        "agent-creation/initial-message",
         {
           "group": "Knowledgebase",
           "pages": [
@@ -71,20 +74,19 @@
             "agent-creation/knowledgebase/web-scraping"
           ]
         },
-        "agent-creation/system-instructions",
-        "agent-creation/initial-prompt",
-        "agent-creation/initial-message"
+        "agent-creation/ui-engine"
       ]
     },
     {
       "group": "Features",
       "pages": [
-        "features/ai-models",
+        "features/AI-models",
         "features/conversations",
         "features/live-handoff",
         "features/analytics",
         "features/voice-to-voice",
-        "features/tools-integration"
+        "features/tools-integration",
+        "features/crawler"
       ]
     },
     {
@@ -112,8 +114,17 @@
       "pages": [
         "integration/deployment",
         "integration/voiceflow",
-        "integration/crawler",
-        "integration/channels"
+        {
+          "group": "Channels",
+          "pages": [
+            "integration/channels/discord",
+            "integration/channels/whatsapp",
+            "integration/channels/instagram",
+            "integration/channels/voice",
+            "integration/channels/telegram (coming soon)",
+            "integration/channels/email (coming soon)"
+          ]
+        }
       ]
     },
     {
@@ -127,7 +138,7 @@
     {
       "group": "Pricing",
       "pages": [
-        "pricing/plans",
+        "pricing/credits",
         "pricing/billing"
       ]
     },
