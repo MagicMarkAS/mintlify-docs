@@ -62,7 +62,7 @@
       "group": "Agent Creation",
       "pages": [
         "agent-creation/overview",
-        "agent-creation/design-and-setup/design-and-setup.mdx",
+        "agent-creation/design-and-setup",
         "agent-creation/system-instructions",
         "agent-creation/initial-prompt",
         "agent-creation/initial-message",
