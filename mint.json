@@ -1,6 +1,10 @@
 {
   "$schema": "https://mintlify.com/schema.json",
   "name": "GlowStudio.ai Documentation",
+  "background": {
+    "dark": "/images/transparent_bg_mintlify.png",
+    "light": "/images/transparent_bg_mintlify.png"
+  },
   "logo": {
     "dark": "/logo/GlowStudio.ai_logo_white.png",
     "light": "/logo/GlowStudio.ai_logo_black.png"
