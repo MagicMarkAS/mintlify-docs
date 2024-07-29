@@ -59,29 +59,39 @@
       ]
     },
     {
-      "group": "Agent Creation",
+  "group": "Agent Creation",
+  "pages": [
+    "agent-creation/overview",
+    "agent-creation/design-and-setup",
+    {
+      "group": "System Prompt",
       "pages": [
-        "agent-creation/overview",
-        "agent-creation/design-and-setup",
-        "agent-creation/system-instructions",
-        "agent-creation/initial-prompt",
-        "agent-creation/initial-message",
-        {
-          "group": "Knowledgebase",
-          "pages": [
-            "agent-creation/knowledgebase/overview",
-            "agent-creation/knowledgebase/file-upload",
-            "agent-creation/knowledgebase/web-scraping"
-          ]
-        },
-        "agent-creation/ui-engine"
+        "agent-creation/system-prompt/overview",
+        "agent-creation/system-prompt/key-concepts",
+        "agent-creation/system-prompt/writing-effective-prompts",
+        "agent-creation/system-prompt/examples",
+        "agent-creation/system-prompt/testing-and-iteration"
       ]
     },
+    "agent-creation/initial-prompt",
+    "agent-creation/initial-message",
+    {
+      "group": "Knowledgebase",
+      "pages": [
+        "agent-creation/knowledgebase/overview",
+        "agent-creation/knowledgebase/kb-and-UI-engine",
+        "agent-creation/knowledgebase/web-scraping"
+      ]
+    },
+    "agent-creation/ui-engine"
+  ]
+},
     {
       "group": "Features",
       "pages": [
         "features/AI-models",
         "features/conversations",
+        "features/usage-tab",
         "features/live-handoff",
         "features/analytics",
         "features/voice-to-voice",
@@ -90,29 +100,59 @@
       ]
     },
     {
-      "group": "Whitelabeling",
+  "group": "Whitelabeling",
+  "pages": [
+    "whitelabeling/overview",
+    {
+      "group": "Understanding Whitelabeling",
       "pages": [
-        "whitelabeling/overview",
-        {
-          "group": "Agency and Clients",
-          "pages": [
-            "whitelabeling/agency-and-clients/setup",
-            "whitelabeling/agency-and-clients/management"
-          ]
-        },
-        {
-          "group": "Client Dashboard",
-          "pages": [
-            "whitelabeling/client-dashboard/features",
-            "whitelabeling/client-dashboard/customization"
-          ]
-        }
+        "whitelabeling/what-is-whitelabeling"
       ]
     },
     {
+      "group": "Agency",
+      "pages": [
+        "whitelabeling/agency/what-is-an-agency",
+        "whitelabeling/agency/setting-up-your-agency",
+        "whitelabeling/agency/custom-domain",
+        "whitelabeling/agency/setting-up-email-routing",
+        "whitelabeling/agency/adjusting-theme",
+        "whitelabeling/agency/creating-custom-tabs",
+        "whitelabeling/agency/setting-agency-footer"
+      ]
+    },
+    {
+      "group": "Client Management",
+      "pages": [
+        "whitelabeling/client-management/how-to-manage-clients",
+        "whitelabeling/client-management/creating-new-client",
+        "whitelabeling/client-management/creating-user-and-permissions",
+        "whitelabeling/client-management/client-login"
+      ]
+    },
+    {
+      "group": "Client Dashboard",
+      "pages": [
+        "whitelabeling/client-dashboard/features",
+        "whitelabeling/client-dashboard/customization"
+      ]
+    }
+  ]
+},
+    {
       "group": "Integration",
       "pages": [
-        "integration/deployment",
+        {
+          "group": "Deploying to website",
+          "pages": [
+            "integration/deployment/Shopify",
+            "integration/deployment/Wix",
+            "integration/deployment/Wordpress",
+            "integration/deployment/Squarespace",
+            "integration/deployment/Webflow",
+            "integration/deployment/iframe"
+          ]
+        },
         "integration/voiceflow",
         {
           "group": "Channels",
