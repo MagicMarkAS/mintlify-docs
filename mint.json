@@ -6,7 +6,7 @@
     "dark": "/logo/GlowStudio.ai_mintlify_banner.png",
     "light": "/logo/GlowStudio.ai_mintlify_banner.png"
   },
-  "favicon": "/favicon-16x16.png",
+  "favicon": "/favicon.svg",
   "colors": {
      "background": {
       "light": "#F6F6F7",
