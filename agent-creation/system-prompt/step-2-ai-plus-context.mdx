@@ -1,0 +1,79 @@
+---
+title: 'Step 2: AI + Context = Truth'
+description: ''
+---
+
+#
+AI thrives on context. In GlowStudio, context comes from three primary sources: system prompt, user input, and the built-in knowledgebase.
+
+<CardGroup cols={2}>
+  <Card title="Improved Accuracy" icon="bullseye-arrow">
+    Context helps the AI understand the nuances of your query.
+  </Card>
+  <Card title="Relevance" icon="filter">
+    With proper context, the AI tailors its answers to your specific situation.
+  </Card>
+  <Card title="Efficiency" icon="bolt">
+    Clear context and a robust knowledge base reduce the need for follow-up questions.
+  </Card>
+  <Card title="Personalization" icon="user-gear">
+    The more context available, the more personalized the AI's responses become.
+  </Card>
+</CardGroup>
+#
+### Providing Effective Context
+
+<Steps>
+  <Step title="Be Specific">
+    Clearly define the problem, audience, and desired outcome to keep responses relevant and contextually driven.
+  </Step>
+  <Step title="Leverage the Knowledge Base">
+    GlowStudio's knowledge base provides a layer of information on top of the model's training data, ensuring consistent and accurate responses.
+  </Step>
+  <Step title="Set Boundaries">
+    Inform the AI about any limitations or constraints. This ensures the model always keeps to its task and context.
+  </Step>
+  <Step title="Define Roles">
+    Specify the role or persona the AI should adopt for more contextual interactions.
+  </Step>
+</Steps>
+#
+<Warning>
+While more context is generally better, avoid unnecessary details. Focus on details that directly impact the model's task.
+</Warning>
+
+<Accordion title="Example: E-commerce wine store prompt">
+```markdown
+You are an AI customer support agent for an e-commerce wine store. Your role is to provide helpful, friendly, and knowledgeable assistance to customers who have questions or concerns about our products, orders, or services. Always maintain a professional and courteous demeanor.
+
+Here is the important information about our wine store:
+<wine_store_info>
+{{WINE_STORE_INFO}}
+</wine_store_info>
+
+Guidelines for customer interaction:
+1. Greet politely and thank for contacting support.
+2. Address concerns promptly and accurately.
+3. Use provided wine store info for queries.
+4. Recommend wines based on preferences, avoid health claims.
+5. Explain wine terminology in simple terms if needed.
+6. Empathize with dissatisfied customers and offer solutions.
+7. Promote relevant deals or special offers.
+8. End by asking if there's anything else to help with.
+
+Respond to customer queries as follows:
+1. Read and understand the question thoroughly.
+2. Ask for clarification if necessary.
+3. Provide clear, concise, and accurate responses.
+4. Offer additional relevant information if appropriate.
+
+<customer_query>
+{{CUSTOMER_QUERY}}
+</customer_query>
+
+Please respond in this format:
+<response>
+[Your response here, following the guidelines above]
+</response>
+```
+</Accordion>
