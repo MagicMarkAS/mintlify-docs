@@ -1,0 +1,209 @@
+---
+title: 'Prompt Engineering: Step-by-Step Guide'
+description: 'Learn how to craft effective prompts for your agents in glowstudio'
+---
+
+
+#
+
+## Step 1: Define the Tone and Objective
+#
+Clearly articulate the AI's role, personality, and primary goals. This sets the foundation for all interactions.
+
+<Info>
+GlowStudio agents are masters of personality, capable of adopting a wide range of tones and styles to suit your needs. Whether you want a casual chatbot or a professional assistant, you can customize the agent's persona to fit your requirements.
+</Info>
+#
+<Tip>
+**Experiment** with different personas to find the perfect fit for your audience or client. Try these options:
+
+- Set the tone to `slang` for a laid-back and fun personality that will resonate with many customers.
+- Request a `nerdy` and tech-savvy personality for tech blogs or e-commerce.
+- Go for a `poetic` style for a book store or blog.
+</Tip>
+
+Here are some tone setters you can try. Copy and paste them into the system instructions of your agent:
+#
+<CodeGroup>
+```markdown Friendly Tone
+You are a friendly and patient tutor specializing in high school mathematics. Your goal is to help students understand complex concepts by breaking them down into simpler terms and providing relatable examples.
+```
+
+```markdown Professional Tone
+You are a professional financial advisor with expertise in retirement planning. Your objective is to provide clear, concise, and accurate information to clients about various retirement savings options and strategies.
+```
+
+```markdown Casual Tone
+You're a laid-back virtual travel buddy with a knack for finding hidden gems in popular tourist destinations. Your mission is to help travelers discover unique experiences that are off the beaten path.
+```
+</CodeGroup>
+#
+## Step 2: AI + Context = Truth
+#
+AI thrives on context. In GlowStudio, context comes from three primary sources: system prompt, user input, and the built-in knowledgebase.
+
+<CardGroup cols={2}>
+  <Card title="Improved Accuracy" icon="bullseye-arrow">
+    Context helps the AI understand the nuances of your query.
+  </Card>
+  <Card title="Relevance" icon="filter">
+    With proper context, the AI tailors its answers to your specific situation.
+  </Card>
+  <Card title="Efficiency" icon="bolt">
+    Clear context and a robust knowledge base reduce the need for follow-up questions.
+  </Card>
+  <Card title="Personalization" icon="user-gear">
+    The more context available, the more personalized the AI's responses become.
+  </Card>
+</CardGroup>
+#
+### Providing Effective Context
+
+<Steps>
+  <Step title="Be Specific">
+    Clearly define the problem, audience, and desired outcome to keep responses relevant and contextually driven.
+  </Step>
+  <Step title="Leverage the Knowledge Base">
+    GlowStudio's knowledge base provides a layer of information on top of the model's training data, ensuring consistent and accurate responses.
+  </Step>
+  <Step title="Set Boundaries">
+    Inform the AI about any limitations or constraints. This ensures the model always keeps to its task and context.
+  </Step>
+  <Step title="Define Roles">
+    Specify the role or persona the AI should adopt for more contextual interactions.
+  </Step>
+</Steps>
+#
+<Warning>
+While more context is generally better, avoid unnecessary details. Focus on details that directly impact the model's task.
+</Warning>
+
+<Accordion title="Example: E-commerce wine store prompt">
+```markdown
+You are an AI customer support agent for an e-commerce wine store. Your role is to provide helpful, friendly, and knowledgeable assistance to customers who have questions or concerns about our products, orders, or services. Always maintain a professional and courteous demeanor.
+
+Here is the important information about our wine store:
+<wine_store_info>
+{{WINE_STORE_INFO}}
+</wine_store_info>
+
+Guidelines for customer interaction:
+1. Greet politely and thank for contacting support.
+2. Address concerns promptly and accurately.
+3. Use provided wine store info for queries.
+4. Recommend wines based on preferences, avoid health claims.
+5. Explain wine terminology in simple terms if needed.
+6. Empathize with dissatisfied customers and offer solutions.
+7. Promote relevant deals or special offers.
+8. End by asking if there's anything else to help with.
+
+Respond to customer queries as follows:
+1. Read and understand the question thoroughly.
+2. Ask for clarification if necessary.
+3. Provide clear, concise, and accurate responses.
+4. Offer additional relevant information if appropriate.
+
+<customer_query>
+{{CUSTOMER_QUERY}}
+</customer_query>
+
+Please respond in this format:
+<response>
+[Your response here, following the guidelines above]
+</response>
+```
+</Accordion>
+#
+## Step 3: Implement Chain of Thought Reasoning
+#
+Chain of Thought (CoT) reasoning guides AI models to break down complex tasks into logical, step-by-step processes, improving accuracy, reliability, and explainability of AI responses.
+
+<Tabs>
+  <Tab title="Understanding CoT">
+    CoT reasoning mimics human problem-solving by encouraging the AI to:
+    1. Analyze the problem
+    2. Break it down into smaller, manageable parts
+    3. Solve each part sequentially
+    4. Combine the results to reach a final conclusion
+  </Tab>
+  <Tab title="Benefits">
+    <CardGroup cols={2}>
+      <Card title="Improved Accuracy" icon="check-double">
+        Logical sequence reduces errors and incorrect conclusions.
+      </Card>
+      <Card title="Enhanced Explainability" icon="chalkboard-user">
+        Step-by-step process improves user understanding.
+      </Card>
+      <Card title="Complex Task Handling" icon="puzzle-piece">
+        Tackles complicated problems more effectively.
+      </Card>
+      <Card title="Reduced Hallucinations" icon="wand-magic-sparkles">
+        Grounding in logic decreases false or irrelevant information.
+      </Card>
+    </CardGroup>
+  </Tab>
+</Tabs>
+
+### Implementing CoT in Prompts
+
+<Steps>
+  <Step title="Explicit Instructions">
+    Tell the AI to think through the problem step-by-step. 
+    Example: "Before providing your final answer, please break down the problem and solve it step-by-step."
+  </Step>
+  <Step title="Question Decomposition">
+    Guide the AI to break down complex queries into smaller, more manageable questions.
+    Example: "To solve this, let's approach it in stages. First, what are the key components of the problem? Second, how do these components relate to each other? Third, ..."
+  </Step>
+  <Step title="Intermediate Steps">
+    Encourage the AI to show its work by providing intermediate results.
+    Example: "As you solve this problem, please share your thought process at each stage, including any intermediate calculations or reasoning."
+  </Step>
+  <Step title="Logical Connectors">
+    Use words like "therefore," "because," "as a result," to encourage logical connections between steps.
+  </Step>
+  <Step title="Verification Prompts">
+    Ask the AI to verify its own work.
+    Example: "After you've reached a conclusion, please review your steps and ensure they logically lead to your final answer."
+  </Step>
+</Steps>
+
+<Accordion title="Example use cases">
+<Tabs>
+  <Tab title="Business Problem">
+    ```markdown
+    You are tasked with solving a complex business problem. Please follow these steps:
+    1. State the problem clearly.
+    2. Identify key variables or factors.
+    3. Explain each factor's potential impact.
+    4. Develop at least two possible solutions with pros and cons.
+    5. Choose and justify the best solution.
+    6. Outline implementation steps.
+    7. Identify challenges and suggest mitigation strategies.
+    Remember to show your reasoning and use logical connectors.
+    ```
+  </Tab>
+  <Tab title="Problem-Solving">
+    ```markdown
+    When solving problems, follow these steps:
+    1. Identify key information in the question.
+    2. Determine what the question is asking.
+    3. Break down the problem into smaller parts.
+    4. Solve each part step-by-step, showing your work.
+    5. Combine results for the final answer.
+    6. Double-check your solution for accuracy.
+    ```
+  </Tab>
+  <Tab title="Customer Support">
+    ```markdown
+    When handling customer inquiries:
+    1. Greet the customer politely.
+    2. Analyze the customer's question or issue carefully.
+    3. Ask clarifying questions if needed.
+    4. Provide a clear and concise solution or explanation.
+    5. Offer additional helpful information if applicable.
+    6. Ask if there's anything else you can assist with.
+    ```
+  </Tab>
+</Tabs>
+</Accordion>

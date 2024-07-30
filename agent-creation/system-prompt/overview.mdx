@@ -1,0 +1,88 @@
+Prompt Engineering Overview
+Prompt engineering is the art and science of crafting effective instructions for AI models, particularly Large Language Models (LLMs). A well-designed prompt can significantly enhance the quality, relevance, and safety of AI-generated responses. This guide will walk you through the key concepts and best practices in prompt engineering.
+
+
+### The Prompt Input Field
+Here's a screenshot of the prompt input field in GlowStudio:
+<Frame>
+  <img className="rounded-md" src="https://i.imgur.com/b8Z7gNS.jpeg" alt="GlowStudio prompt input field" width="700" />
+</Frame>
+<Info>
+  Remember to always include the variables `{kb_context}` and `{about_context}` in your prompt. Without these, the agent won't have access to the retrieved chunks from the RAG (Retrieval-Augmented Generation) system.
+</Info>
+#
+Key Concepts
+<AccordionGroup>
+  <Accordion title="Chain of Thought (CoT) Reasoning" icon="sitemap">
+    Chain of Thought (CoT) reasoning is a technique that involves breaking down complex problems into a series of intermediate steps. This approach helps the AI model to:
+Copy1. Understand the problem more thoroughly
+2. Show its reasoning process
+3. Arrive at more accurate conclusions
+
+**Example:**
+
+<CodeGroup>
+  ```markdown Human Input
+  What's the result of 25 * 18?
+  ```
+  ```markdown AI Response
+  Let's approach this step-by-step:
+
+  1. First, let's break down 25 * 18 into (20 + 5) * 18
+  2. Now we can calculate:
+     a) 20 * 18 = 360
+     b) 5 * 18 = 90
+  3. Adding these results:
+     360 + 90 = 450
+
+  Therefore, 25 * 18 = 450
+  ```
+</CodeGroup>
+  </Accordion>
+  <Accordion title="Few-Shot Learning" icon="graduation-cap">
+    Few-shot learning is a technique where you provide the AI with a small number of examples to guide its understanding of the task. This can be particularly useful when you want the AI to follow a specific format or style in its responses.
+Copy- One-shot learning: Providing one example
+- Two-shot learning: Providing two examples
+- Few-shot learning: Providing a few (typically 3-5) examples
+
+**Example:**
+
+<CodeGroup>
+  ```markdown Human Input
+  Translate the following English phrases to French. Here are two examples:
+
+  English: Hello, how are you?
+  French: Bonjour, comment allez-vous ?
+
+  English: Where is the nearest restaurant?
+  French: Où est le restaurant le plus proche ?
+
+  Now, translate this:
+  English: I would like to book a hotel room.
+  ```
+  ```markdown AI Response
+  Based on the examples provided, here's the translation:
+
+  English: I would like to book a hotel room.
+  French: Je voudrais réserver une chambre d'hôtel.
+  ```
+</CodeGroup>
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+Now that you've got an overview of prompt engineering, explore the following sections to deepen your understanding:
+<CardGroup cols={2}>
+  <Card title="Formatting Your Prompts" icon="pen-fancy" href="formatting">
+    Learn how to structure and format your prompts effectively using Markdown and XML.
+  </Card>
+  <Card title="Step-by-Step Prompt Guide" icon="list-ol" href="prompt-guide-step-by-step">
+    Follow our comprehensive guide to crafting the perfect prompt.
+  </Card>
+  <Card title="TechTalk Example (Markdown)" icon="code" href="/system-prompt/example-techtalk-markdown">
+    See a real-world example of a tech-focused prompt using Markdown.
+  </Card>
+  <Card title="BakeMate Example (Markdown)" icon="cake-candles" href="example-bakemate-markdown">
+    Explore a culinary-themed prompt example using Markdown.
+  </Card>
+</CardGroup>
