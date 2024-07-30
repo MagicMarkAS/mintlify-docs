@@ -1,7 +1,162 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: 'Overview'
+description: ''
 ---
 
 
-test
+Prompt engineering is the art and science of crafting effective instructions for AI models, particularly Large Language Models (LLMs). A well-designed prompt can significantly enhance the quality, relevance, and safety of AI-generated responses. This guide will walk you through the key concepts and best practices in prompt engineering.   
+
+#  
+
+
+> Screenshot of the prompt input field in glowstudio:  
+
+
+<img class="rounded-md" src="https://i.imgur.com/b8Z7gNS.jpeg  
+
+ 
+ 
+
+" width="700"></img>    
+
+
+<Info>Rememeber to always include the variables `{kb_context}` and `{about_context}` in your prompt or else the agent wont know the retrieved chunks from the RAG.</Info>  
+
+
+
+### Key Concepts   
+
+  #  
+
+
+<Accordion title="Chain of Thought (CoT) Reasoning">   
+
+
+Chain of Thought (CoT) reasoning is a technique that involves breaking down complex problems into a series of intermediate steps. This approach helps the AI model to:   
+
+
+1. Understand the problem more thoroughly   
+
+
+2. Show its reasoning process   
+
+
+3. Arrive at more accurate conclusions   
+
+ 
+ 
+
+**Example:**   
+
+ 
+
+```   
+
+Human: What's the result of 25 * 18?   
+
+
+AI: Let's approach this step-by-step:   
+
+ 
+1. First, let's break down 25 * 18 into (20 + 5) * 18   
+
+
+2. Now we can calculate:   
+
+
+   a) 20 * 18 = 360   
+
+
+   b) 5 * 18 = 90   
+
+
+3. Adding these results:   
+
+
+   360 + 90 = 450   
+
+
+Therefore, 25 * 18 = 450   
+
+
+```   
+
+ 
+ 
+
+  
+
+  
+
+ 
+ 
+
+</Accordion>   
+
+ 
+
+<Accordion title="Few-Shot Learning">   
+
+
+
+Few-shot learning is a technique where you provide the AI with a small number of examples to guide its understanding of the task. This can be particularly useful when you want the AI to follow a specific format or style in its responses.   
+
+ 
+
+
+- One-shot learning: Providing one example   
+
+
+- Two-shot learning: Providing two examples   
+
+
+- Few-shot learning: Providing a few (typically 3-5) examples   
+
+ 
+ 
+
+**Example:**   
+
+
+```   
+
+
+Human: Translate the following English phrases to French. Here are two examples:   
+
+ 
+
+
+English: Hello, how are you?   
+
+French: Bonjour, comment allez-vous ?   
+
+ 
+
+English: Where is the nearest restaurant?   
+
+French: Où est le restaurant le plus proche ?   
+
+
+
+Now, translate this:   
+
+ 
+English: I would like to book a hotel room.   
+
+
+
+
+AI: Based on the examples provided, here's the translation:   
+
+
+
+ 
+English: I would like to book a hotel room.   
+
+French: Je voudrais réserver une chambre d'hôtel.   
+
+```   
+
+</Accordion>   
+
+ 

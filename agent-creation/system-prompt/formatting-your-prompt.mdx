@@ -1,0 +1,160 @@
+---
+title: 'Formatting your Prompts'
+description: ''
+---
+
+    
+
+
+
+Proper formatting of prompts is crucial for effective communication with AI models. Here are some tips and tricks on using the formatting languages of the GPT models in `markdown` and the anthropic models in `xml`.  
+
+
+## Key Concepts
+
+<CardGroup cols={2}>
+  <Card title="Emphasis" icon="bold">
+    Highlight important information using various text styling techniques.
+  </Card>
+  <Card title="Structure" icon="layer-group">
+    Organize your prompt with headings, lists, and nested elements.
+  </Card>
+</CardGroup>
+
+## Formatting Techniques
+Here is everything you need to craft effective prompts in markdown and xml formatting:
+
+<Tabs>
+<Tab title="Markdown">
+      <Accordion title="Basic Formatting" icon="text-size">
+        ```markdown
+        *Italic text* for mild emphasis
+        **Bold text** for strong emphasis
+        ***Bold and italic*** for extra strong emphasis
+        `Code-style text` for technical terms or commands
+        ```
+      </Accordion>
+      <Accordion title="Headings and Structure" icon="heading">
+        ```markdown
+        # Main Prompt Title
+        ## Section 1: Context
+        ### Background Information
+        ### Current Situation
+        ## Section 2: Task Description
+        ```
+      </Accordion>
+      <Accordion title="Lists and Steps" icon="list">
+        ```markdown
+        1. First step
+        2. Second step
+        3. Third step
+    - Bullet point 1
+    - Bullet point 2
+      - Sub-point A
+      - Sub-point B
+    ```
+      </Accordion>
+      <Accordion title="Code Blocks" icon="code">
+    
+      ```markdown
+      ```python
+      def example_function():
+          return "This is an example"
+      ```
+      ```
+      ```json
+      {
+        "key": "value",
+        "array": [1, 2, 3]
+      }
+      
+      ```
+     </Accordion>
+  </Tab>
+  <Tab title="XML">
+   
+     <Accordion title="Basic Structure" icon="sitemap">
+       ```xml
+        <prompt>
+          <context>This is the context</context>
+          <instruction>This is the main instruction</instruction>
+          <important>This is crucial information</important>
+          <example>This is an example</example>
+        </prompt>
+       ```
+      </Accordion>
+
+      <Accordion title="Roles and Dialogue" icon="comments">
+        ```xml
+        <conversation>
+          <human>What's the weather like today?</human>
+          <assistant>I don't have real-time weather data. Please check a reliable weather website or app for your location.</assistant>
+        </conversation>
+        ```
+      </Accordion>
+      <Accordion title="Nested Structures" icon="network-wired">
+        ```xml
+        <prompt>
+          <context>
+            <background>Relevant background information goes here.</background>
+            <current_situation>Description of the current scenario.</current_situation>
+          </context>
+          <task>
+            <primary_objective>Main goal of the task</primary_objective>
+            <secondary_objectives>
+              <objective1>First secondary objective</objective1>
+              <objective2>Second secondary objective</objective2>
+            </secondary_objectives>
+          </task>
+        </prompt>
+        ```
+      </Accordion>
+      <Accordion title="Attributes and CDATA" icon="code">
+        ```xml
+        <instruction type="main" priority="high" tone="professional">
+          Craft a response addressing the user's concern.
+        </instruction>
+    <example_code>
+      <![CDATA[
+        def complex_function(x, y):
+            return x * y + (x / y) if y != 0 else "Error: Division by zero"
+      ]]>
+    </example_code>
+    ```
+  </Accordion>
+
+  </Tab>
+</Tabs>
+#
+
+<Warning>
+Always test your formatted prompts to ensure they produce the desired results with your specific AI model.
+</Warning>
+
+
+#
+<Card title="Advanced Formatting Tips" icon="lightbulb">
+  <Steps>
+    <Step title="Combine Formats">
+      For complex prompts, consider using a combination of Markdown and XML techniques to leverage the strengths of both formats.
+    </Step>
+    <Step title="Model-Specific Formatting">
+      Some AI models have specific formatting preferences:
+      - GPT models typically work well with Markdown
+      - Anthropic models are designed to interpret XML
+ Always consult the model's documentation for best results.
+</Step>
+<Step title="Test and Iterate">
+  Experiment with different formatting styles and structures. Test your prompts with the target AI model and refine based on the results.
+</Step>
+  </Steps>
+</Card>
+#
+By mastering these formatting techniques and utilizing appropriate structures, you can create highly effective prompts that clearly communicate your intentions to AI models, resulting in more accurate and useful responses.
+
+Now that you know the proper formatting, read our comprehensive guide on how to write your [system prompt](/system-prompt/).
+
+
+
+  
+
