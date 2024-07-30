@@ -66,7 +66,20 @@
   "pages": [ 
     "agent-creation/overview", 
     "agent-creation/design-and-setup", 
+    "agent-creation/initial-prompt", 
+    "agent-creation/initial-message", 
     { 
+      "group": "Knowledgebase", 
+      "pages": [ 
+        "agent-creation/knowledgebase/overview", 
+        "agent-creation/knowledgebase/kb-and-UI-engine", 
+        "agent-creation/knowledgebase/web-scraping" 
+      ] 
+    }, 
+    "agent-creation/UI-engine" 
+  ] 
+}, 
+    {  
       "group": "System Prompt", 
       "pages": [ 
         "agent-creation/system-prompt/overview",
@@ -85,19 +98,6 @@
         "agent-creation/system-prompt/prompt-example-bakemate" 
       ] 
     }, 
-    "agent-creation/initial-prompt", 
-    "agent-creation/initial-message", 
-    { 
-      "group": "Knowledgebase", 
-      "pages": [ 
-        "agent-creation/knowledgebase/overview", 
-        "agent-creation/knowledgebase/kb-and-UI-engine", 
-        "agent-creation/knowledgebase/web-scraping" 
-      ] 
-    }, 
-    "agent-creation/ui-engine" 
-  ] 
-}, 
     { 
       "group": "Features", 
       "pages": [ 
@@ -110,7 +110,7 @@
         "features/tools-integration", 
         "features/crawler" 
       ] 
-    }, 
+    },  
     { 
   "group": "Whitelabeling", 
   "pages": [ 
