@@ -92,19 +92,28 @@ Example: `DM Sans`
 </Warning>
 
 
-
+#
 ## Widget Language
+
+<CardGroup cols={2}>
+  <Card title="Language Code:" icon="language">
+     Glowstudio uses [ISO 639-1 language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes) to set the language, this means your widget can have literally **any** language.
+    
+
+    <Accordion title="Example:"> English will be `en`.</Accordion>
+  </Card>
+  <Card title="Automatic Translation:" icon="globe">
+     Labels and placeholders will be **automatically** translated to your chosen language. `Title` and `branding` will keep their original language and text. Change those to your preferred language manually.
+  </Card>
+</CardGroup>
+
+
+
+
 #
-**Language Code**: Glowstudio uses [ISO 639-1 language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes) to set the language, this means your widget can have literally **any** language.
-
-Example: English will be `en`.
-#
-
-**Automatic Translation**: Labels and placeholders will be automatically translated to your chosen language. (Title and branding will keep their original language and text. Change those manually to your preferred language)
-
 ## Buttons Layout
-#
-Customize the layout and look of the buttons used in your agent's interface. There are three options to consider with each unique uses cases. Example, `in footer`or `horizontal` is often used as a way to automatically generate follow up questions (**similar to ms co-pilot**) to guide the user through the conversation with ease.   
+
+Customize the layout and look of the buttons used in your agent's interface. There are three options to consider with each unique uses cases. Example, `in footer` or `horizontal` is often used as a way to automatically generate follow up questions (**similar to microsoft co-pilot or perplexity**) to guide the user through the conversation with ease.   
 
 <img src="/images/shots_button_layout_cropped.png" width="500"></img>
 
@@ -175,6 +184,8 @@ Set the images that will represent your agent visually.
 
 Personalize your agent's color scheme to align with your brand.
 
+<Tip>If youre struggling to find your brands primary color. We recommend dowloading the chrome/edge plugin [ColorPick Eyedropper](https://chromewebstore.google.com/detail/colorpick-eyedropper/ohcpnigalekghcmgcdcenkpelffpdolg) to easily find your preferred color from your website color.</Tip>
+
 <img src="/images/shots_theme_picker.png" width="400" style={{
     borderRadius: '12px',
     overflow: 'hidden'}}></img>
@@ -193,9 +204,8 @@ You can choose between six predefined themes that work in both light and dark mo
 </Accordion>
 
 <Accordion title="Autogen Theme from Color" icon="wand-sparkles">
-### 
-
-Recommended: Automatically generate a theme based on your primary color.
+ 
+**Recommended:** Automatically generate a theme based on your primary color.
 
 <Callout type="warning">
   Visibility Note: Ensure white text on top of the primary color is clearly visible and experiment with all kinds of color combinations.
@@ -225,11 +235,13 @@ It's essential to know how the agent behaves and looks before letting a client t
 
 <CardGroup cols={2}>
   <Card title="Prototype:" icon="cubes">
-    1.  Your clients will want to test a demo of their agent. Using the prototype link is a great way to do that. If you have whitelabeling included in your tier, the link will have your custom domain and branding!
+    1.  Your clients will want to test a demo of their agent. Using the prototype link is a great way to do that. If you are in the whitelabeling program, the link will have your custom domain and branding!
     <img src="/images/prototype_screen_shots.png"></img>
   </Card>
   <Card title="Demo:" icon="presentation-screen">
-    2. It's not always easy to visualize how the agent will look on a website. The demo link lets you test it out in chat bubble format, so you get an idea of how the client will experience it on their website.
+    2. It's not always easy to visualize how the agent will look on a website. The demo link lets you test it out in chat bubble format, so you get an idea of how the agent will look your website. 
+
+    <Tip> This is also a great way to test out custom CSS styling.</Tip>
     
     <img src="/images/demo_screenshot_shots.png" width="600"></img>
     
