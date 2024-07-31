@@ -9,7 +9,7 @@ description: 'A comprehensive guide on how to design your agent with outstanding
 <img src="/images/branding_agent_designer.png"></img>
 
 
-## 1. Overview
+# 1. Overview
 
 The Overview section allows you to customize your agents text to fit your client's branding or your unique style.
 
@@ -66,7 +66,7 @@ To add a link, use a colon behind the word you want to hyperlink:
 
 
 
-## 2. Appearance
+# 2. Appearance
 
 Customize the look and feel of your agent to match your brand.
 
@@ -74,7 +74,6 @@ Customize the look and feel of your agent to match your brand.
 <img src="/images/appearance_UI.png" width="600"></img>
 
 
-## Font Family
 #
 **Font family**: Choose from any of the free [Google fonts](Google_font). 
 
@@ -176,23 +175,35 @@ Set the images that will represent your agent visually.
 
 Personalize your agent's color scheme to align with your brand.
 
-### Preset themes
+<img src="/images/shots_theme_picker.png" width="400" style={{
+    borderRadius: '12px',
+    overflow: 'hidden'}}></img>
+
+<AccordionGroup>
+  
+  
+<Accordion title="Preset themes" icon="palette">
+### 
 
 You can choose between six predefined themes that work in both light and dark mode.
 
 <Tip>
   You can set your agent to light or dark mode. This is nice for clients with darker websites as the agent will fit right in to the branding.
 </Tip>
+</Accordion>
 
-### Autogen Theme from Color
+<Accordion title="Autogen Theme from Color" icon="wand-sparkles">
+### 
 
 Recommended: Automatically generate a theme based on your primary color.
 
 <Callout type="warning">
   Visibility Note: Ensure white text on top of the primary color is clearly visible and experiment with all kinds of color combinations.
 </Callout>
+</Accordion>
 
-### Manual Set Theme Colors
+<Accordion title="Manual Set Theme Colors" icon="sliders">
+### 
 
 **Custom Colors**: Manually input your theme colors using HEX codes or the color palettes available in the designer.
 
@@ -201,22 +212,63 @@ Example: `#F34534`
 <Tip>
   All colors and elements can be modified using custom CSS.
 </Tip>
+</Accordion>
+</AccordionGroup>
+
+
 
 ## Showcasing the agent
 
 It's essential to know how the agent behaves and looks before letting a client test it. Glowstudio has two options for testing, right from the agent designer.
 
-1. **Prototype**: Your clients will want to test a demo of their agent. Using the prototype link is a great way to do that. If you have whitelabeling included in your tier, the link will have your custom domain and branding!
 
-2. **Demo**: It's not always easy to visualize how the agent will look on a website. The demo link lets you test it out in chat bubble format, so you get an idea of how the client will experience it on their website.
+
+<CardGroup cols={2}>
+  <Card title="Prototype:" icon="cubes">
+    1.  Your clients will want to test a demo of their agent. Using the prototype link is a great way to do that. If you have whitelabeling included in your tier, the link will have your custom domain and branding!
+    <img src="/images/prototype_screen_shots.png"></img>
+  </Card>
+  <Card title="Demo:" icon="presentation-screen">
+    2. It's not always easy to visualize how the agent will look on a website. The demo link lets you test it out in chat bubble format, so you get an idea of how the client will experience it on their website.
+    
+    <img src="/images/demo_screenshot_shots.png" width="600"></img>
+    
+  </Card>
+</CardGroup>
+
+
+
 
 ### Additional Tips
 
-- **Save Regularly**: Remember to always save your progress to prevent the loss of your beautiful designs.
-- **Thorough Testing**: Test your agent thoroughly to ensure all settings and features are working as intended.
+<Card title="" icon="" href="">
+   <Check> **Save Regularly**: Remember to always save your progress to prevent the loss of your beautiful designs.</Check>
+<Check>**Thorough Testing**: Test your agent thoroughly to ensure all settings and features are working as intended.</Check>
+</Card>
+
 
 ## Example: GymBuddy GPT
 
-Here is a test of the agent used in the guide above. Give it a try:
+Here is the agent used in the guide above. `Give it a try:`
 
 <iframe src="https://voiceglow.org/app/eu/render/u30gm48l0xkthh1/iframe" width="400" height="600" style={{borderRadius: '1.2rem' }} />
+#
+## Related docs:
+
+<CardGroup cols={2}>
+  <Card title="UI-Engine" icon="engine">
+    
+  </Card>
+
+  <Card title="Tools" icon="gear">
+    
+  </Card>
+  
+  <Card title="Prompt guide" icon="text">
+    
+  </Card>
+
+  <Card title="Knowledgebase" icon="brain">
+    
+  </Card>
+</CardGroup>
