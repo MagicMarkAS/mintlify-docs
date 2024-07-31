@@ -89,9 +89,8 @@
       "pages": [ 
         "agent-creation/system-prompt/step-1-define-the-tone-and-objective",
         "agent-creation/system-prompt/step-2-ai-plus-context", 
-        "agent-creation/system-prompt/using-context-and-setting-boundaries",
-        "agent-creation/system-prompt/step-4-implement-cot",
-        "agent-creation/system-prompt/step-5-implement-cot",
+        "agent-creation/system-prompt/step-3-implement-cot",
+        "agent-creation/system-prompt/step-4-examples-and-reinforcing-instructions",
         "agent-creation/system-prompt/step-6-implement-cot",    
         "agent-creation/system-prompt/prompt-example-techtalk",
         "agent-creation/system-prompt/prompt-example-bakemate" 
