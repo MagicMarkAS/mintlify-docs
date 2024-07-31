@@ -2,6 +2,134 @@
 title: 'Step 4: Using few-shot and reinforcing instructions'
 ---
 
+#
+## Provide Examples (Few-Shot Learning)
+#
+
+one-shot/two-shot/Few-shot/many-shot learning is a powerful technique in prompt engineering that involves providing the AI model with examples of desired interactions. This method helps guide the model to understand and replicate the expected behavior in similar situations. You have probably seen this used in LLM benchmarking when ranking models.
+<Tip>
+  Using examples in your prompts can significantly improve the AI's understanding of the task and lead to more accurate and consistent responses. [Read more here]()
+</Tip>
+### Key Benefits and Implementation
+<CardGroup cols={2}>
+  <Card title="Improved Output Quality" icon="star">
+    Provide examples that demonstrate the exact format and content you expect. This leads to more accurate and relevant responses from the AI.
+  </Card>
+  <Card title="Consistency" icon="equals">
+    Show multiple examples to establish patterns that the AI can follow consistently across different interactions.
+  </Card>
+  <Card title="Task Comprehension" icon="lightbulb">
+    Use examples to illustrate complex or nuanced tasks, making them clearer for the AI to understand and execute.
+  </Card>
+  <Card title="Safety and Control" icon="shield">
+    Demonstrate how to handle sensitive topics or avoid unwanted content through carefully crafted examples.
+  </Card>
+</CardGroup>
+Example Formats:
+<AccordionGroup>
+  <Accordion title="One-Shot Example">
+    <CodeBlock language="markdown">
+      ## When answering queries, use the format from the example interaction below:
+Copy  Human: I received a damaged product. What should I do?
+
+  AI: I'm sorry to hear that your product arrived damaged. Here's what you can do:
+
+  1. Take clear photos of the damaged item and its packaging.
+  2. Locate your order number from your confirmation email.
+  3. Contact our customer service team at support@example.com or call 1-800-123-4567.
+  4. Provide your order number and a brief description of the damage.
+  5. Our team will guide you through the return and replacement process.
+
+  Is there anything else I can help you with regarding this issue?
+</CodeBlock>
+  </Accordion>
+  <Accordion title="Two-Shot Example">
+    <CodeBlock language="markdown">
+      ## Example response formats:
+Copy  Human: I'm looking for a new laptop for video editing. Any suggestions?
+
+  AI: Of course! I'd be happy to help you find a suitable laptop for video editing. To provide the best recommendations, I'll need a bit more information:
+
+  1. What's your budget range?
+  2. Do you have a preference for screen size?
+  3. Are there any specific software applications you'll be using?
+  4. Do you need portability, or will it primarily be used in one location?
+
+  Once you provide this information, I can offer some tailored recommendations that meet your needs.
+
+  Human: Can you tell me more about the battery life of the latest smartphone model?
+
+  AI: Certainly! The latest smartphone model features a high-capacity battery that can last up to 24 hours with regular use. It also supports fast charging, allowing you to charge up to 50% in just 30 minutes. Additionally, it includes power-saving modes to extend battery life even further. If you have any specific usage scenarios in mind, I can provide more detailed information.
+</CodeBlock>
+  </Accordion>
+  <Accordion title="Three-Shot Example">
+    <CodeBlock language="markdown">
+      ## Example response formats:
+Copy  Human: What are the gym's opening hours?
+
+  AI: Our gym is open from 5:00 AM to 10:00 PM on weekdays, and from 6:00 AM to 8:00 PM on weekends.
+
+  Human: What equipment is available at the gym?
+
+  AI: We offer a wide range of equipment including:
+
+  - Cardio machines (treadmills, ellipticals, stationary bikes)
+  - Free weights (dumbbells, barbells)
+  - Strength training machines
+  - Functional training equipment (kettlebells, resistance bands)
+
+  If you have any specific equipment in mind or need more information, feel free to ask!
+
+  Human: Are there any fitness classes available at the gym?
+
+  AI: Yes, we offer a variety of fitness classes such as yoga, spinning, HIIT, and Pilates. Classes are available at different times throughout the day to accommodate your schedule. You can check our class schedule online or at the front desk for more details.
+</CodeBlock>
+  </Accordion>
+</AccordionGroup>
+<Warning>
+  While examples are powerful, be careful not to overload your prompt with too many. Start with one or two examples and add more only if necessary to achieve the desired output.
+</Warning>
 
 
+
+
+
+
+
+#
+#
+# Reinforcing instructions
+
+Repeat important instructions throughout the prompt to ensure the AI maintains consistent behavior.
+<Tip>
+  Reinforcing key instructions helps prevent the AI from "forgetting" important guidelines as the conversation progresses. This is crucial for maintaining consistency in longer interactions.
+</Tip>
+## Implementation and Best Practices:
+<CardGroup cols={2}>
+  <Card title="Identify & Prioritize" icon="star">
+    Review your prompt and identify the most critical instructions or the ones that the model has difficulty following. 
+  </Card>
+  <Card title="Strategic Placement" icon="map-pin">
+    Decide where to repeat key instructions within your prompt. Common placements include the beginning, after providing context, and at the end as a final reminder.
+  </Card>
+  <Card title="Natural Language & Visual Cues" icon="eye">
+    Integrate reinforced instructions using natural, conversational language. Use [formatting techniques](/system-prompt/formatting-your-prompt) so the instructions are distinct and easily noticeable for the model.
+  </Card>
+  <Card title="Test and Refine" icon="vial">
+    Regularly test your prompts and adjust the reinforcement strategy based on performance. Ensure a balance between reinforcing key points and maintaining overall clarity in your instructions.
+  </Card>
+</CardGroup>
+<Warning>
+  While reinforcement is important, be careful not to over-complicate your prompt with excessive repetition.
+</Warning>
+
+<Card title="" icon="" href="">
+    
+    <CodeGroup>
+    ```markdown yes
+    ```
+    ```markdown yes
+    ```
+    </CodeGroup>
+</Card>
 
