@@ -166,12 +166,12 @@
         {
           "group": "Deploying to website",
           "pages": [
-            "integration/deployment/Shopify",
-            "integration/deployment/Wix",
-            "integration/deployment/Wordpress",
-            "integration/deployment/Squarespace",
-            "integration/deployment/Webflow",
-            "integration/deployment/iframe"
+            "integration/deploying-to-website/shopify",
+            "integration/deploying-to-website/wix",
+            "integration/deploying-to-website/wordpress",
+            "integration/deploying-to-website/squarespace",
+            "integration/deploying-to-website/webflow",
+            "integration/deploying-to-website/iframe"
           ]
         },
         {
@@ -188,8 +188,8 @@
             "integration/channels/whatsapp",
             "integration/channels/instagram",
             "integration/channels/voice",
-            "integration/channels/telegram (coming soon)",
-            "integration/channels/email (coming soon)"
+            "integration/channels/telegram",
+            "integration/channels/email"
           ]
         }
       ]
@@ -205,8 +205,8 @@
     {
       "group": "Pricing",
       "pages": [
-        "pricing/credits",
-        "pricing/billing"
+        "Pricing/credits",
+        "Pricing/billing"
       ]
     },
     {
