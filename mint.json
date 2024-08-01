@@ -32,8 +32,8 @@
   },
   "tabs": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
+      "name": "Whitelabeling",
+      "url": "whitelabeling"
     }
   ],
   "anchors": [
@@ -161,7 +161,7 @@
       ]
     },
     {
-      "group": "Integration",
+      "group": "Integrations",
       "pages": [
         {
           "group": "Deploying to website",
