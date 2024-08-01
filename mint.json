@@ -111,7 +111,7 @@
       "group": "Features", 
       "pages": [ 
         "features/AI-models", 
-        "features/conversations", 
+        "features/conversations-tab", 
         "features/usage-tab", 
         "features/live-handoff", 
         "features/analytics", 
