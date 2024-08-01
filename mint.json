@@ -33,7 +33,7 @@
   "tabs": [
     {
       "name": "Whitelabeling",
-      "url": "whitelabeling/whitelabeling"
+      "url": "whitelabeling/overview"
     }
   ],
   "anchors": [
@@ -59,6 +59,14 @@
       "pages": [
         "introduction",
         "quickstart"
+      ]
+    },
+    {
+      "group": "Whitelabeling",
+      "pages": [
+        "whitelabeling/overview",
+        "whitelabeling/setup",
+        "whitelabeling/customization"
       ]
     },
     {
