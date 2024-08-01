@@ -158,8 +158,8 @@
         "whitelabeling/client-dashboard/customization" 
       ] 
     } 
-  ] 
-}, 
+        ] 
+    }, 
     { 
       "group": "Integration", 
       "pages": [ 
