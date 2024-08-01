@@ -33,7 +33,7 @@
   "tabs": [
     {
       "name": "Whitelabeling",
-      "url": "/whitelabeling/whitelabeling"
+      "url": "whitelabeling/whitelabeling"
     }
   ],
   "anchors": [
@@ -192,14 +192,6 @@
             "integration/Channels/email"
           ]
         }
-      ]
-    },
-    {
-      "group": "API Reference",
-      "pages": [
-        "api-reference/introduction",
-        "api-reference/authentication",
-        "api-reference/endpoints"
       ]
     },
     {
