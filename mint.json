@@ -32,8 +32,12 @@
   },
   "tabs": [
     {
+      "name": "API Reference",
+      "url": "/api-reference"
+    },
+    {
       "name": "Whitelabeling",
-      "url": "whitelabeling"
+      "url": "/whitelabeling/overview"
     }
   ],
   "anchors": [
@@ -132,8 +136,7 @@
         "whitelabeling/overview",
         {
           "group": "Understanding Whitelabeling",
-          "pages": [
-          ]
+          "pages": []
         },
         {
           "group": "Agency",
@@ -177,36 +180,44 @@
         {
           "group": "Voiceflow",
           "pages": [
-            "integration/Voiceflow/overview",
-            "integration/Voiceflow/extensions"
+            "integration/voiceflow/overview",
+            "integration/voiceflow/extensions"
           ]
         },
         {
           "group": "Channels",
           "pages": [
-            "integration/Channels/discord",
-            "integration/Channels/whatsapp",
-            "integration/Channels/instagram",
-            "integration/Channels/voice",
-            "integration/Channels/telegram",
-            "integration/Channels/email"
+            "integration/channels/discord",
+            "integration/channels/whatsapp",
+            "integration/channels/instagram",
+            "integration/channels/voice",
+            "integration/channels/telegram",
+            "integration/channels/email"
           ]
         }
       ]
     },
     {
+      "group": "API Reference",
+      "pages": [
+        "api-reference/introduction",
+        "api-reference/authentication",
+        "api-reference/endpoints"
+      ]
+    },
+    {
       "group": "Pricing",
       "pages": [
-        "Pricing/credits",
-        "Pricing/billing"
+        "pricing/credits",
+        "pricing/billing"
       ]
     },
     {
       "group": "Support",
       "pages": [
-        "Support/faq",
-        "Support/troubleshooting",
-        "Support/contact"
+        "support/faq",
+        "support/troubleshooting",
+        "support/contact"
       ]
     }
   ],
