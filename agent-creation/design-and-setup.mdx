@@ -81,11 +81,11 @@ Example: `DM Sans`
 
 
 <Tip>
-  You can change the fonts of specific parts (like header and input field) using custom CSS.
+  You can change the fonts of specific parts (like header and input field) using **custom CSS**.
 </Tip>
 
 #
-**Inherit Font**: Type "inherit" to use the same font as you or your clients webpage.
+**Inherit Font**: Type "inherit" in the font input field to use the same font as webpage. Note: The widget must be put on the website for this to work.
 
 <Warning type="warning">
   Not recommended, as this may break the agent – use at your own **risk**.
@@ -97,17 +97,36 @@ Example: `DM Sans`
 
 <CardGroup cols={2}>
   <Card title="Language Code:" icon="language">
-     Glowstudio uses [ISO 639-1 language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes) to set the language, this means your widget can have literally **any** language.
+     Glowstudio uses [ISO 639-1 language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes) to set the language, this means your widget can have literally **any** language. **Codes are primarily used in the developer API.
     
 
-    <Accordion title="Example:"> English will be `en`.</Accordion>
+    
   </Card>
   <Card title="Automatic Translation:" icon="globe">
-     Labels and placeholders will be **automatically** translated to your chosen language. `Title` and `branding` will keep their original language and text. Change those to your preferred language manually.
+     Labels and placeholders will be **automatically** translated to your chosen language. `Title` and `branding` will keep their original language and text. Choose ✨**Automatic** to pull website language automatically.
+    
+
   </Card>
 </CardGroup>
 
+<CardGroup cols={2}>
+  <Card title="" icon="">
+     
 
+    <Accordion title="Example:"> English will be `en`.</Accordion>
+  </Card>
+  <Card title="" icon="">
+     
+    <video
+    controls
+  autoPlay
+  muted
+  loop
+  playsInline
+  src="/images/changing_language.mp4" style={{ width: '400px', borderRadius: '0.8rem' }}></video>
+
+  </Card>
+</CardGroup>
 
 
 #
