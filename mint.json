@@ -212,9 +212,9 @@
     { 
       "group": "Support", 
       "pages": [ 
-        "support/faq", 
-        "support/troubleshooting", 
-        "support/contact" 
+        "Support/faq", 
+        "Support/troubleshooting", 
+        "Support/contact" 
       ] 
     } 
   ], 
