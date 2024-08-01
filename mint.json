@@ -72,7 +72,14 @@
       "group": "Knowledgebase",
       "pages": [
         "agent-creation/knowledgebase/about-the-knowledgebase",
-        "agent-creation/knowledgebase/adding-data",
+        { 
+      "group": "Adding data", 
+      "pages": [ 
+        "agent-creation/knowledgebase/adding-data/direct-text-entry",
+        "agent-creation/knowledgebase/adding-data/file-upload",
+        "agent-creation/knowledgebase/adding-data/add-URL"
+      ] 
+    },
         "agent-creation/knowledgebase/adjusting-kb-settings",
         "agent-creation/knowledgebase/structuring-kb-documents",
         "agent-creation/knowledgebase/kb-and-ui-engine" 
