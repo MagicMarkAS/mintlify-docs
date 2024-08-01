@@ -1,90 +1,90 @@
-{ 
-  "$schema": "https://mintlify.com/schema.json", 
-  "name": "GlowStudio.ai Documentation", 
-  "backgroundImage": "/images/transparent_bg_mintlify.png", 
-  "logo": { 
-    "dark": "/logo/GlowStudio.ai_mintlify_banner.png", 
-    "light": "/logo/GlowStudio.ai_mintlify_banner.png" 
-  }, 
-  "favicon": "/favicon-glowstudio-32x32.svg", 
-  "colors": { 
-     "background": { 
-      "light": "#F6F6F7", 
-      "dark": "#0B0C10" 
-    }, 
-    "primary": "#A020F0", 
-    "light": "#E000D9", 
-    "dark": "#8010C0", 
-    "anchors": { 
-      "from": "#A020F0", 
-      "to": "#FF00FF" 
-    } 
-  }, 
-  "topbarLinks": [ 
-    { 
-      "name": "Support", 
-      "url": "mailto:support@glowstudio.ai" 
-    } 
-  ], 
-  "topbarCtaButton": { 
-    "name": "Dashboard", 
-    "url": "https://dashboard.glowstudio.ai" 
-  }, 
-  "tabs": [ 
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "GlowStudio.ai Documentation",
+  "backgroundImage": "/images/transparent_bg_mintlify.png",
+  "logo": {
+    "dark": "/logo/GlowStudio.ai_mintlify_banner.png",
+    "light": "/logo/GlowStudio.ai_mintlify_banner.png"
+  },
+  "favicon": "/favicon-glowstudio-32x32.svg",
+  "colors": {
+    "background": {
+      "light": "#F6F6F7",
+      "dark": "#0B0C10"
+    },
+    "primary": "#A020F0",
+    "light": "#E000D9",
+    "dark": "#8010C0",
+    "anchors": {
+      "from": "#A020F0",
+      "to": "#FF00FF"
+    }
+  },
+  "topbarLinks": [
     {
-      "name": "API Reference", 
-      "url": "api-reference" 
-    } 
-  ], 
-  "anchors": [ 
-    { 
-      "name": "Documentation", 
-      "icon": "book-open-cover", 
-      "url": "https://glowstudio.ai/docs" 
-    }, 
-    { 
-      "name": "Community", 
-      "icon": "discord", 
-      "url": "https://glowstudio.ai/community" 
-    }, 
-    { 
-      "name": "Blog", 
-      "icon": "newspaper", 
-      "url": "https://glowstudio.ai/blog" 
-    } 
-  ], 
-  "navigation": [ 
-    { 
-      "group": "Get Started", 
-      "pages": [ 
-        "introduction", 
-        "quickstart" 
-      ] 
-    }, 
-    { 
-"group": "Agent Creation",
+      "name": "Support",
+      "url": "mailto:support@glowstudio.ai"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Dashboard",
+    "url": "https://dashboard.glowstudio.ai"
+  },
+  "tabs": [
+    {
+      "name": "API Reference",
+      "url": "api-reference"
+    }
+  ],
+  "anchors": [
+    {
+      "name": "Documentation",
+      "icon": "book-open-cover",
+      "url": "https://glowstudio.ai/docs"
+    },
+    {
+      "name": "Community",
+      "icon": "discord",
+      "url": "https://glowstudio.ai/community"
+    },
+    {
+      "name": "Blog",
+      "icon": "newspaper",
+      "url": "https://glowstudio.ai/blog"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Get Started",
+      "pages": [
+        "introduction",
+        "quickstart"
+      ]
+    },
+    {
+      "group": "Agent Creation",
       "pages": [
         "agent-creation/overview",
         "agent-creation/design-and-setup",
         "agent-creation/initial-prompt",
         "agent-creation/initial-message",
-        { 
-      "group": "Knowledgebase",
-      "pages": [
-        "agent-creation/knowledgebase/about-the-knowledgebase",
-        { 
-      "group": "Adding data", 
-      "pages": [ 
-        "agent-creation/knowledgebase/adding-data/direct-text-entry",
-        "agent-creation/knowledgebase/adding-data/file-upload",
-        "agent-creation/knowledgebase/adding-data/add-URL"
-      ] 
-    },
-        "agent-creation/knowledgebase/adjusting-kb-settings",
-        "agent-creation/knowledgebase/structuring-kb-documents",
-        "agent-creation/knowledgebase/kb-and-ui-engine" 
-      ] 
-    },
+        {
+          "group": "Knowledgebase",
+          "pages": [
+            "agent-creation/knowledgebase/about-the-knowledgebase",
+            {
+              "group": "Adding data",
+              "pages": [
+                "agent-creation/knowledgebase/adding-data/direct-text-entry",
+                "agent-creation/knowledgebase/adding-data/file-upload",
+                "agent-creation/knowledgebase/adding-data/add-URL"
+              ]
+            },
+            "agent-creation/knowledgebase/adjusting-kb-settings",
+            "agent-creation/knowledgebase/structuring-kb-documents",
+            "agent-creation/knowledgebase/kb-and-ui-engine"
+          ]
+        },
         "agent-creation/UI-engine"
       ]
     },
@@ -92,135 +92,135 @@
       "group": "System Prompt",
       "pages": [
         "agent-creation/system-prompt/overview",
-        "agent-creation/system-prompt/formatting-your-prompt", 
-        { 
-      "group": "Prompt guide", 
-      "pages": [ 
-        "agent-creation/system-prompt/step-1-define-the-tone-and-objective",
-        "agent-creation/system-prompt/step-2-ai-plus-context", 
-        "agent-creation/system-prompt/step-3-implement-cot",
-        "agent-creation/system-prompt/step-4-examples-and-reinforcing-instructions",
-        "agent-creation/system-prompt/step-5-advanced-techniques-and-testing" 
-      ] 
-    },
-        "agent-creation/system-prompt/techtalk",
-        "agent-creation/system-prompt/bakemate" 
-      ] 
-    }, 
-    { 
-      "group": "Features", 
-      "pages": [ 
-        "features/AI-models", 
-        "features/conversations-tab", 
-        "features/usage-tab", 
-        "features/live-handoff", 
-        "features/analytics", 
-        "features/voice-to-voice", 
-        "features/tools-integration", 
-        "features/crawler" 
-      ] 
-    },  
-    { 
-  "group": "Whitelabeling", 
-  "pages": [ 
-    "whitelabeling/overview", 
-    { 
-      "group": "Understanding Whitelabeling", 
-      "pages": [ 
-        "whitelabeling/what-is-whitelabeling" 
-      ] 
-    }, 
-    { 
-      "group": "Agency", 
-      "pages": [ 
-        "whitelabeling/agency what-is-an-agency", 
-        "whitelabeling/agency/setting-up-your-agency", 
-        "whitelabeling/agency/custom-domain", 
-        "whitelabeling/agency/setting-up-email-routing", 
-        "whitelabeling/agency/adjusting-theme", 
-        "whitelabeling/agency/creating-custom-tabs", 
-        "whitelabeling/agency/setting-agency-footer" 
-      ] 
-    }, 
-    { 
-      "group": "Client Management", 
-      "pages": [ 
-        "whitelabeling/client-management/how-to-manage-clients", 
-        "whitelabeling/client-management/creating-new-client", 
-        "whitelabeling/client-management/creating-user-and-permissions", 
-        "whitelabeling/client-management/client-login" 
-      ] 
-    }, 
-    { 
-      "group": "Client Dashboard", 
-      "pages": [ 
-        "whitelabeling/client-dashboard/features", 
-        "whitelabeling/client-dashboard/customization" 
-      ] 
-    } 
-        ] 
-    }, 
-    { 
-      "group": "Integration", 
-      "pages": [ 
-        { 
-          "group": "Deploying to website", 
-          "pages": [ 
-            "integration/deployment/Shopify", 
-            "integration/deployment/Wix", 
-            "integration/deployment/Wordpress", 
-            "integration/deployment/Squarespace", 
-            "integration/deployment/Webflow", 
-            "integration/deployment/iframe" 
-          ] 
-        }, 
-          { 
-          "group": "Voiceflow", 
-          "pages": [ 
-            "integration/voiceflow/overview",
-            "integration/voiceflow/extensions" 
-          ] 
+        "agent-creation/system-prompt/formatting-your-prompt",
+        {
+          "group": "Prompt guide",
+          "pages": [
+            "agent-creation/system-prompt/step-1-define-the-tone-and-objective",
+            "agent-creation/system-prompt/step-2-ai-plus-context",
+            "agent-creation/system-prompt/step-3-implement-cot",
+            "agent-creation/system-prompt/step-4-examples-and-reinforcing-instructions",
+            "agent-creation/system-prompt/step-5-advanced-techniques-and-testing"
+          ]
         },
-        { 
-          "group": "Channels", 
-          "pages": [ 
-            "integration/channels/discord", 
-            "integration/channels/whatsapp", 
-            "integration/channels/instagram", 
-            "integration/channels/voice", 
-            "integration/channels/telegram (coming soon)", 
-            "integration/channels/email (coming soon)" 
-          ] 
-        } 
-      ] 
-    }, 
-    { 
-      "group": "API Reference", 
-      "pages": [ 
-        "api-reference/introduction", 
-        "api-reference/authentication", 
-        "api-reference/endpoints" 
-      ] 
-    }, 
-    { 
-      "group": "Pricing", 
-      "pages": [ 
-        "pricing/credits", 
-        "pricing/billing" 
-      ] 
-    }, 
-    { 
-      "group": "Support", 
-      "pages": [ 
-        "Support/faq", 
-        "Support/troubleshooting", 
-        "Support/contact" 
-      ] 
-    } 
-  ], 
-  "footerSocials": { 
-    "twitter": "https://twitter.com/glowstudio_ai", 
-    "github": "https://github.com/glowstudio-ai", 
-    "linkedin": "https://www.linkedin.com/company/glowstudio-ai" 
-  } 
-} 
+        "agent-creation/system-prompt/techtalk",
+        "agent-creation/system-prompt/bakemate"
+      ]
+    },
+    {
+      "group": "Features",
+      "pages": [
+        "features/AI-models",
+        "features/conversations-tab",
+        "features/usage-tab",
+        "features/live-handoff",
+        "features/analytics",
+        "features/voice-to-voice",
+        "features/tools-integration",
+        "features/crawler"
+      ]
+    },
+    {
+      "group": "Whitelabeling",
+      "pages": [
+        "whitelabeling/overview",
+        {
+          "group": "Understanding Whitelabeling",
+          "pages": [
+            "whitelabeling/what-is-whitelabeling"
+          ]
+        },
+        {
+          "group": "Agency",
+          "pages": [
+            "whitelabeling/agency/what-is-an-agency",
+            "whitelabeling/agency/setting-up-your-agency",
+            "whitelabeling/agency/custom-domain",
+            "whitelabeling/agency/setting-up-email-routing",
+            "whitelabeling/agency/adjusting-theme",
+            "whitelabeling/agency/creating-custom-tabs",
+            "whitelabeling/agency/setting-agency-footer"
+          ]
+        },
+        {
+          "group": "Client Management",
+          "pages": [
+            "whitelabeling/client-management/how-to-manage-clients",
+            "whitelabeling/client-management/creating-new-client",
+            "whitelabeling/client-management/creating-user-and-permissions",
+            "whitelabeling/client-management/client-login"
+          ]
+        },
+        {
+          "group": "Client Dashboard",
+          "pages": [
+            "whitelabeling/client-dashboard/features",
+            "whitelabeling/client-dashboard/customization"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Integration",
+      "pages": [
+        {
+          "group": "Deploying to website",
+          "pages": [
+            "integration/deployment/Shopify",
+            "integration/deployment/Wix",
+            "integration/deployment/Wordpress",
+            "integration/deployment/Squarespace",
+            "integration/deployment/Webflow",
+            "integration/deployment/iframe"
+          ]
+        },
+        {
+          "group": "Voiceflow",
+          "pages": [
+            "integration/voiceflow/overview",
+            "integration/voiceflow/extensions"
+          ]
+        },
+        {
+          "group": "Channels",
+          "pages": [
+            "integration/channels/discord",
+            "integration/channels/whatsapp",
+            "integration/channels/instagram",
+            "integration/channels/voice",
+            "integration/channels/telegram (coming soon)",
+            "integration/channels/email (coming soon)"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "API Reference",
+      "pages": [
+        "api-reference/introduction",
+        "api-reference/authentication",
+        "api-reference/endpoints"
+      ]
+    },
+    {
+      "group": "Pricing",
+      "pages": [
+        "pricing/credits",
+        "pricing/billing"
+      ]
+    },
+    {
+      "group": "Support",
+      "pages": [
+        "Support/faq",
+        "Support/troubleshooting",
+        "Support/contact"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "twitter": "https://twitter.com/glowstudio_ai",
+    "github": "https://github.com/glowstudio-ai",
+    "linkedin": "https://www.linkedin.com/company/glowstudio-ai"
+  }
+}
