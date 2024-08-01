@@ -62,26 +62,28 @@
       ] 
     }, 
     { 
-  "group": "Agent Creation", 
-  "pages": [ 
-    "agent-creation/overview", 
-    "agent-creation/design-and-setup", 
-    "agent-creation/initial-prompt", 
-    "agent-creation/initial-message", 
-    { 
-      "group": "Knowledgebase", 
-      "pages": [ 
-        "agent-creation/knowledgebase/overview", 
-        "agent-creation/knowledgebase/kb-and-UI-engine", 
-        "agent-creation/knowledgebase/web-scraping" 
-      ] 
-    }, 
-    "agent-creation/UI-engine" 
-  ] 
-}, 
-    {  
-      "group": "System Prompt", 
-      "pages": [ 
+"group": "Agent Creation",
+      "pages": [
+        "agent-creation/overview",
+        "agent-creation/design-and-setup",
+        "agent-creation/initial-prompt",
+        "agent-creation/initial-message",
+        "agent-creation/UI-engine"
+      ]
+    },
+    {
+      "group": "Knowledgebase",
+      "pages": [
+        "agent-creation/knowledgebase/about-the-knowledgebase",
+        "agent-creation/knowledgebase/adding-data",
+        "agent-creation/knowledgebase/adjusting-kb-settings",
+        "agent-creation/knowledgebase/structuring-kb-documents",
+        "agent-creation/knowledgebase/kb-and-ui-engine"
+      ]
+    },
+    {
+      "group": "System Prompt",
+      "pages": [
         "agent-creation/system-prompt/overview",
         "agent-creation/system-prompt/formatting-your-prompt", 
         { 
