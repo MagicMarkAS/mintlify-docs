@@ -64,9 +64,7 @@
     {
       "group": "Whitelabeling",
       "pages": [
-        "whitelabeling/overview",
-        "whitelabeling/setup",
-        "whitelabeling/customization"
+        "whitelabeling/overview"
       ]
     },
     {
@@ -135,35 +133,29 @@
         {
           "group": "Understanding Whitelabeling",
           "pages": [
-            "whitelabeling/what-is-whitelabeling"
           ]
         },
         {
           "group": "Agency",
           "pages": [
-            "whitelabeling/agency/what-is-an-agency",
-            "whitelabeling/agency/setting-up-your-agency",
+            "whitelabeling/agency/overview",
             "whitelabeling/agency/custom-domain",
-            "whitelabeling/agency/setting-up-email-routing",
-            "whitelabeling/agency/adjusting-theme",
-            "whitelabeling/agency/creating-custom-tabs",
-            "whitelabeling/agency/setting-agency-footer"
+            "whitelabeling/agency/email",
+            "whitelabeling/agency/theme",
+            "whitelabeling/agency/custom-tabs",
+            "whitelabeling/agency/footer"
           ]
         },
         {
           "group": "Client Management",
           "pages": [
-            "whitelabeling/client-management/how-to-manage-clients",
-            "whitelabeling/client-management/creating-new-client",
-            "whitelabeling/client-management/creating-user-and-permissions",
-            "whitelabeling/client-management/client-login"
+            "whitelabeling/client-management/creating-a-client"
           ]
         },
         {
           "group": "Client Dashboard",
           "pages": [
-            "whitelabeling/client-dashboard/features",
-            "whitelabeling/client-dashboard/customization"
+            "whitelabeling/client-dashboard/features"
           ]
         }
       ]
