@@ -174,7 +174,13 @@
             "integration/deployment/iframe" 
           ] 
         }, 
-        "integration/voiceflow", 
+          { 
+          "group": "Voiceflow", 
+          "pages": [ 
+            "integration/voiceflow/overview",
+            "integration/voiceflow/extensions" 
+          ] 
+        },
         { 
           "group": "Channels", 
           "pages": [ 
