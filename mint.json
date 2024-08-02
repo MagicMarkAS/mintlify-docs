@@ -92,6 +92,7 @@
             },
             "agent-creation/knowledgebase/adjusting-kb-settings",
             "agent-creation/knowledgebase/structuring-kb-documents",
+            "agent-creation/knowledgebase/previewing-the-kb",
             "agent-creation/knowledgebase/kb-and-ui-engine"
           ]
         },
