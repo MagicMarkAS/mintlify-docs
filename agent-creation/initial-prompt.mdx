@@ -2,3 +2,125 @@
 title: 'Initial prompt'
 description: ''
 ---
+
+
+The initial prompt overrides the initial message and instructs the AI agent on what to write as the first message. This feature allows for a wide range of creative use cases and variations.
+
+<video
+  autoPlay
+  muted
+  playsInline
+  style={{ width: '600px', borderRadius: '0.8rem' }}
+  src="/images/initial_prompt_video1.mp4"
+></video>
+
+
+
+<Card title="Key Features:" icon="sparkles">
+  <CardGroup cols={2}>
+    <Card title="Standardized Messages" icon="message">
+      Easily write standardized messages for consistent communication or tell your agent it has the freedom to write a unique message each time. 
+    </Card>
+    <Card title="Markdown Support" icon="markdown">
+      Take advantage of Markdown formatting to create rich text content with ease. Format your text with bold, italics, links, lists, and more to enhance the readability and presentation of your messages.
+    </Card>
+    <Card title="UI Engine" icon="engine">
+      Utilize our powerful UI engine to create interactive elements like buttons, carousels, and cards. These components are perfect for building dynamic and engaging interfaces that enhance user experience.
+    </Card>
+    <Card title="User Engagement" icon="users">
+      Leverage interactive elements to boost user engagement. Ideal for conversation starters, lead capture forms, and various user interaction scenarios, helping you to better connect with your audience.
+    </Card>
+  </CardGroup>
+</Card>
+
+
+<Note>Max characters for the initial prompt is 10,000.</Note>
+
+
+<Warning>
+ Enabling the UI engine allows your agent to create interactive elements, which may result in increased credit usage. For more details, please refer to the [Credit usage](/Pricing/credits) page for more information.
+</Warning>
+#
+
+
+
+## How to Set Up the Initial Prompt:
+<Steps>
+  <Step title="Access the Initial Prompt Section">
+    Navigate to your agent's prompt tab and locate the `Initial Prompt to the agent` section.
+  </Step>
+  <Step title="Enter Your Prompt">
+    Type in the instructions for the AI agent. Include Markdown formatting, emojis, and directives for creating UI elements as needed.
+  </Step>
+  <Step title="Save Your Changes">
+    Once you've entered your prompt, click `save` to ensure the AI uses the new initial prompt.
+  </Step>
+  <Step title="Test and Iterate">
+    Experiment with different methods, either giving clear instructions or allowing more freedom to the AI. See our [System prompt guide](agent-creation/system-prompt/Overview) for detailed prompting instructions.
+  </Step>
+</Steps>
+#### Example Prompts:
+
+<AccordionGroup>
+  <Accordion title="Standard Greeting (without UI-engine)">
+    ```
+    Greet the user with a short message.
+    Use markdown formatting.
+    ```
+    <img style={{ borderRadius: '1.0rem' }} width="300" src="https://i.imgur.com/OXLXvuN.jpeg"/>
+> Model used: GPT4-o
+  </Accordion>
+  <Accordion title="Interactive Greeting">
+    ```
+    You will start by generating a welcome message in markdown with ### heading.
+    You will also generate three questions as buttons which the user might ask.
+    ```
+    <img style={{ borderRadius: '1.0rem' }} width="300" src="https://i.imgur.com/yRAdThb.png"/>
+> Model used: Claude 3.5 Sonnet
+  </Accordion>
+  <Accordion title="The whole shabang (Warning: you might get rickrolled)">
+    ```
+    Greet the user with "Hi there let's get you started!" and in the same message showcase to them that you can write organized markdown including lists, bold text, italic etc.
+
+Then use the showcase the following images in a carousel:
+Images:
+
+![Image - Cool cat with glasses](https://i.ibb.co/7GZGLBh/a5oyaaaaaaaaaa.png)
+![Image - Lovely cat close up](https://i.ibb.co/kcTJppf/photo-2023-08-07-19-19-08.jpg)
+![Image - Guy petting the cat](https://i.ibb.co/cxbF1mX/photo-2023-11-28-04-33-00.jpg" alt="photo-2023-11-28-04-33-00)
+
+Then show the infamous Rick Astely video in an iFrame after mentioning that you could render youtube videos just like you will do for this one:
+<iframe width="786" height="442" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Rick Astley - Never Gonna Give You Up (Official Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Then generate some random buttons and a card with one button without image and a funny joke in it.
+
+As a final message tell the user to test out initial message prompt in glowstudio, cause its freaking awesome!
+```
+
+<Tip>
+  **This one you have to try out yourself**, give it a shot using `Claude 3.5 Sonnet`
+</Tip>
+
+  </Accordion>
+</AccordionGroup>
+
+
+### Relevant docs:
+
+<CardGroup cols={2}>
+  <Card title="System prompt" icon="terminal" href="/agent-creation/system-prompt/Overview">
+    
+  </Card>
+
+  <Card title="Initial message" icon="message" href="/agent-creation/initial-message">
+    
+  </Card>
+  
+  <Card title="Designing your agent" icon="brush" href="/agent-creation/design-and-setup">
+    
+  </Card>
+
+  <Card title="UI-engine" icon="engine" href="/features/ui-engine">
+    
+  </Card>
+</CardGroup>
