@@ -48,20 +48,32 @@ Setting a higher chunk limit will consume more [credits](credits), as more <Tool
 
     To further enhance your agent's ability to retrieve the most relevant information from the knowledge base, use a prompt for the <Tooltip tip="A technique that generates search keywords based on the conversation context">Search Similarity Step</Tooltip>: 
 
- 
- 
-
-    1. Navigate to your agent's `Knowledge` section 
-
-    2. Go to the `gear` icon in upper right. 
-
-    3. Write your prompt in the input field or use the provided example below! 
-
-    4. Remember to include the `{chat_history}` vairable as it wont work without. 
-
-    5. Press `Done` and test the knowledge base by using the `Preview KB` in the upper right. 
-
- 
+ <Steps>
+  <Step title="Navigate to Knowledge Section" icon="map-location-dot">
+    Go to your agent's `Knowledge` section in the dashboard.
+  </Step>
+  <Step title="Access Settings" icon="gear">
+    Look for and click on the `gear` icon located in the upper right corner of the page.
+  </Step>
+  <Step title="Write Your Prompt" icon="pencil">
+    In the input field that appears, write your custom prompt. If you're unsure, you can use the provided example as a starting point.
+  </Step>
+  <Step title="Include Chat History Variable" icon="code">
+    Ensure you include the `{chat_history}` variable in your prompt. This is crucial for the proper functioning of your knowledge base.
+<Warning>
+  The knowledge base won't work correctly without the `{chat_history}` variable.
+</Warning>
+  </Step>
+  <Step title="Save Changes" icon="floppy-disk">
+    After writing your prompt, click the `Done` button to save your changes.
+  </Step>
+  <Step title="Test the Knowledge Base" icon="vial-circle-check">
+    To verify that your knowledge base is working as expected, use the `Preview KB` feature located in the upper right corner of the page.
+<Tip>
+  Testing your knowledge base helps ensure that it responds accurately to queries before going live.
+</Tip>
+  </Step>
+</Steps>
  
 
      
