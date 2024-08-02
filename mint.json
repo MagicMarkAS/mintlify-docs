@@ -182,19 +182,19 @@
         {
           "group": "Voiceflow",
           "pages": [
-            "integration/voiceflow/overview",
-            "integration/voiceflow/extensions"
+            "integration/Voiceflow/overview",
+            "integration/Voiceflow/extensions"
           ]
         },
         {
           "group": "Channels",
           "pages": [
-            "integration/channels/discord",
-            "integration/channels/whatsapp",
-            "integration/channels/instagram",
-            "integration/channels/voice",
-            "integration/channels/telegram",
-            "integration/channels/email"
+            "integration/Channels/discord",
+            "integration/Channels/whatsapp",
+            "integration/Channels/instagram",
+            "integration/Channels/voice",
+            "integration/Channels/telegram",
+            "integration/Channels/email"
           ]
         }
       ]
@@ -210,16 +210,16 @@
     {
       "group": "Pricing",
       "pages": [
-        "pricing/credits",
-        "pricing/billing"
+        "Pricing/credits",
+        "Pricing/billing"
       ]
     },
     {
       "group": "Support",
       "pages": [
-        "support/faq",
-        "support/troubleshooting",
-        "support/contact"
+        "Support/faq",
+        "Support/troubleshooting",
+        "Support/contact"
       ]
     }
   ],
