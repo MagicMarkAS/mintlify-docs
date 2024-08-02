@@ -37,7 +37,7 @@
     },
     {
       "name": "Whitelabeling",
-      "url": "/whitelabeling/overview"
+      "url": "whitelabeling"
     }
   ],
   "anchors": [
@@ -136,7 +136,9 @@
         "whitelabeling/overview",
         {
           "group": "Understanding Whitelabeling",
-          "pages": []
+          "pages": [
+            "whitelabeling/whitelabeling"
+          ]
         },
         {
           "group": "Agency",
