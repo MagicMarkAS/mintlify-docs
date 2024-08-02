@@ -1,4 +1,132 @@
 ---
 title: 'Structuring KB documents'
-description: 'Description of your new file.'
+description: ''
 ---
+
+
+    Proper document structure improves readability for both humans and AI (GPT models from OpenAI read markdown best, while [anthropic models](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/use-xml-tags) read XML). We recommend using a clear hierarchy with headings, subheadings, and bullet points. 
+
+ 
+ 
+#
+    
+
+<CodeGroup> 
+
+    ```markdown Example structure using markdown: 
+    # Product X User Manual 
+
+    ## 1. Introduction 
+    - Overview of Product X 
+    - Key features and benefits 
+
+    ## 2. Getting Started 
+    - Unboxing and setup 
+    - Initial configuration 
+
+    ## 3. Basic Operations 
+    - Powering on/off 
+    - Navigating the user interface 
+
+    ## 4. Advanced Features 
+    - Custom settings 
+    - Integration with other devices 
+
+    ## 5. Troubleshooting 
+    - Common issues and solutions 
+    - Contacting support 
+
+    ``` 
+    
+    ```markdown Example using XML tag formatting: 
+    <ProductManual> 
+
+    <Title>Product X User Manual</Title> 
+
+    <Section> 
+        <Title>1. Introduction</Title> 
+        <Subsection>Overview of Product X</Subsection> 
+        <Subsection>Key features and benefits</Subsection> 
+    </Section> 
+
+    <Section> 
+        <Title>2. Getting Started</Title> 
+        <Subsection>Unboxing and setup</Subsection> 
+        <Subsection>Initial configuration</Subsection> 
+    </Section> 
+
+    <Section> 
+        <Title>3. Basic Operations</Title> 
+        <Subsection>Powering on/off</Subsection> 
+        <Subsection>Navigating the user interface</Subsection>
+    </Section> 
+
+    <Section> 
+        <Title>4. Advanced Features</Title> 
+        <Subsection>Custom settings</Subsection> 
+        <Subsection>Integration with other devices</Subsection> 
+    </Section> 
+
+    <Section> 
+        <Title>5. Troubleshooting</Title> 
+        <Subsection>Common issues and solutions</Subsection> 
+        <Subsection>Contacting support</Subsection> 
+    </Section> 
+</ProductManual> 
+    ```  
+
+ 
+
+   </CodeGroup>  
+
+ 
+ 
+
+    <Tip> 
+
+      Consistent structure across documents helps the AI agent quickly locate and extract relevant information, leading to more accurate and context-aware responses. **To quickly reformat documents, feed the text to an LLM**. 
+
+    </Tip> 
+#
+## Adding Descriptions and Tags
+
+    Each of the text ingestion methods explained above all include the following fields to enhance your knowledge base's searchability and efficiency: 
+
+# 
+<Card title="Document Description" icon="pen">
+   Write a brief (2-3 sentences) summary of the document's content. For example: 
+
+    ``` 
+
+      "This document outlines our company's customer return policy, including eligibility criteria, timeframes, and refund processes." 
+
+    ``` 
+</Card>
+  # 
+<Card title="Tags" icon="hashtag">
+  Tags Add relevant `keywords` that describe the document's main topics. For instance: 
+
+<img></img>
+     
+
+    ``` 
+
+      customer-service, returns, refunds, policy 
+
+    ``` 
+
+    
+<img></img>
+
+</Card>
+      # 
+
+    <Info> 
+
+      These descriptions and tags help the LLM  understand the context and relevance of each document, improving the accuracy of information retrieval. **We recommend** doing both for best possible retrieval and output.
+
+    </Info> 
+
+    # 
+
+
