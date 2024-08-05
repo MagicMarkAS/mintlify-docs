@@ -1,4 +1,157 @@
 ---
 title: 'KB and UI-engine'
-description: 'Description of your new file.'
+description: ''
 ---
+The UI Engine is a powerful feature in Glowstudio.ai that allows you to create dynamic, interactive elements in your AI agent's responses. By integrating the UI Engine with your knowledge base, you can create more sophisticated and context-aware interfaces while optimizing your system instructions. This guide will show you how to effectively combine these two powerful tools.
+
+
+
+#
+## Instructing Your Agent
+Here's how you can use the `system prompt` to instruct your agent to use UI Engine components with information from the knowledge base:
+#
+<Tabs>
+  <Tab title="Carousels">
+    ```markdown
+    #When recommending products, create a carousel using the provided product info and formatting instructions in the knowledge base with description, image links and button text.
+    ```
+  </Tab>
+  <Tab title="Cards">
+    ```markdown
+    #You can create cards using the UI engine components available. Use the instructions provided in the knowledge base when displaying these.
+    ```
+  </Tab>
+  <Tab title="Images">
+    ```markdown
+    #You can display images. When recommending products, use the links that are provided together with the product description in the knowledgebase
+    ```
+  </Tab>
+  <Tab title="Iframes">
+    ```markdown
+    #You can display iframes. You have iframe code provided to you in the knowledgebase. If the user asks to book a meeting, you will display the iframe using the code snippet. Do not manipulate the code in any way and keep the height and width.
+    ```
+  </Tab>
+</Tabs>
+<Info>
+  By referring to the knowledge base in your prompt, you can populate it with links, text, and formatting instructions that the model can use in its responses, freeing up space in your system instructions.
+</Info>
+#
+#
+## Structuring Your Knowledge Base docs
+To efficiently retrieve information for UI Engine components, structuring your knowledge base documents for easy retrieval is `key`. We recommend the following:
+#
+<AccordionGroup>
+  <Accordion title="Carousels">
+Carousels can be displayed in every way you want. only pictures, without pictures, without title etc. This makes for many creative use-cases:
+
+    ```markdown
+    # When showing products in carousel use this information:
+
+Title: Travis Scott x Air Jordan 1 Low OG 'Olive'
+Description: Travis Scott collab? You know it's gonna be 🔥. Dropping soon!
+Image: https://sneakerbardetroit.com/wp-content/uploads/2024/06/Travis-Scott-Air-Jordan-1-Low-OG-Medium-Olive-On-Feet-1068x757.jpg
+Button: Cop now🔥
+
+Title: Nike SB x Air Jordan 4 'Pine Green'
+Description: Skate-ready J's in a fresh colorway. These are straight 🔥
+Image: https://sneakernews.com/wp-content/uploads/2023/03/jordan-4-sb-pine-green-store-list-0.jpg
+Button: Cop now🔥
+```
+  </Accordion>
+  <Accordion title="Cards">
+
+As well as all other UI elements. Cards can also be heavily customized. Here are some variants you can consider:
+
+    ```markdown
+    #When displaying cards, use the following information:
+## Card with text:
+Title:
+Text:
+
+## Cards without button:
+Title:
+Text:
+
+## Cards with button:
+Title:
+Text:
+Button:
+ 
+## Cards with image:
+Title:
+Text:
+Image link:
+
+## Cards with image and button:
+Title:
+Text:
+Button text:
+Image link:
+
+## Card with only image and title:
+Image:
+Title:
+```
+  </Accordion>
+  <Accordion title="Images">
+
+Images needs to be pulled from a `valid` URL. Makes sure to test this thouroughly before launching you agent. Looking for a hosting service, we recommend [imgur](https://img.doerig.dev/).
+
+    ```markdown
+    # When showing images, use these links:
+
+
+## Picture of a cute dog: [URL]
+
+
+
+# Macbook pro product information:
+
+# [Description]
+
+## Photo of a macbook pro: [URL](use this when recommending the product to the user)
+```
+  </Accordion>
+  <Accordion title="Iframes">
+
+  Iframes introduces the ability to integrate `any` website into you agent. This means you can embed calendly for booking, agent previews inside you agent😯, or showing youtube videos with ease. **Make sure to test this thoroughly.**
+    ```markdown
+    # When the user asks to book an appointment you will display this calendly iframe code:
+
+## Remember: set the height and width correctly, not set css to 100%:
+
+If the user asks to make n appointment embed this link to calendly in a iframe:<!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/[COUR-CALENDLY-URL]" style="min-width:320px;height:700px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
+```
+  </Accordion>
+</AccordionGroup>
+
+
+<Tip>
+  <h3>Customize for Your Use Case</h3>
+  <p>While these guidelines provide a solid foundation, remember that every knowledge base is unique. Here are some key points to consider:</p>
+  <ul>
+    <li>Experiment with different structures to find what works best for your specific needs.</li>
+    <li>UI elements may require special attention - their optimal format can vary based on your agent.</li>
+    <li>Don't hesitate to iterate and refine your approach over time.</li>
+  </ul>
+</Tip>
+
+#
+### Best Practices
+<CardGroup cols={2}>
+  <Card title="Consistent Formatting" icon="align-left">
+    Use consistent formatting across your knowledge base to make it easier for your agent to parse and use the information.
+  </Card>
+  <Card title="Clear Instructions" icon="clipboard-list">
+    Provide clear, specific instructions in your knowledge base on how to use each piece of information.
+  </Card>
+  <Card title="Regular Updates" icon="arrows-rotate">
+    Keep your knowledge base up-to-date with the latest product information, images, and formatting instructions.
+  </Card>
+  <Card title="Test Thoroughly" icon="vial">
+    Regularly test your agent's responses to ensure it's correctly using the UI Engine components with the knowledge base information.
+  </Card>
+</CardGroup>
