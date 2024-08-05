@@ -120,12 +120,13 @@ Images needs to be pulled from a `valid` URL. Makes sure to test this thouroughl
     ```markdown
     # When the user asks to book an appointment you will display this calendly iframe code:
 
-## Remember: set the height and width correctly, not set css to 100%:
 
-If the user asks to make n appointment embed this link to calendly in a iframe:<!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/[COUR-CALENDLY-URL]" style="min-width:320px;height:700px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<!-- Calendly inline widget end -->
+If the user asks to book an appointment embed this link to calendly in a iframe:
+
+<iframe width="400" height="442" src="https://calendly.com/admin-magicmark/15min?primary_color=ff00d9&month=2024-08"></iframe>
+
+## Remember: Set the iframes width and height as px as not as 100% in the CSS. And use exactly the iframe code provided, do not change anything!
+
 ```
   </Accordion>
 </AccordionGroup>
