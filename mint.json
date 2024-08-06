@@ -121,13 +121,14 @@
     {
       "group": "Features",
       "pages": [
-        "features/aimodels",
+        "features/ai-models",
         "features/conversations-tab",
         "features/usage-tab",
         "features/live-handoff",
         "features/analytics",
         "features/voice-to-voice",
-        "features/tools-integration",
+        "features/tools",
+        "features/ui-engine",
         "features/crawler"
       ]
     },
