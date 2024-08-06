@@ -121,7 +121,7 @@
     {
       "group": "Features",
       "pages": [
-        "features/ai-models",
+        "features/aimodels",
         "features/conversations-tab",
         "features/usage-tab",
         "features/live-handoff",
