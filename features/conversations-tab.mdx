@@ -26,64 +26,66 @@ The Conversation tab is a crucial feature of your AI agent, providing invaluable
 </CardGroup>
 
 
-## Interface Overview
+Interface Overview
 The Conversation tab is divided into three main sections:
-<Tabs>
-  <Tab title="Left Panel">
-    <img src="/images/left_section_shots.png" alt="Left Panel" width="400" />
-    Displays a list of all conversations, sortable by various criteria.
-  </Tab>
-  <Tab title="Central Panel">
-    <img src="/images/middle_section_shots.png" alt="Central Panel" width="700" />
-    Shows the selected conversation transcript and session.
-  </Tab>
-  <Tab title="Right Panel">
-    <img src="/images/right_section_shots.png" alt="Right Panel" width="400" />
-    Provides conversation details and management options.
-  </Tab>
-</Tabs>
 
-
-### Left Panel: Conversation List
+## Left Panel: Conversation List
+<img src="/images/left_section_shots.png" alt="Left Panel" width="300" />
+The left panel provides an overview of all conversations and offers various sorting options.
+### Sorting Options 
 
 <AccordionGroup>
-  <Accordion title="Sorting Options">
-    - Recent/Oldest: Sort by conversation start time
-    - More/Less: Sort by number of interactions
-    - By Tags: Filter conversations using custom or predefined tags
+  <Accordion title="Time-based Sorting">
+    - Recent: Display newest conversations first
+    - Oldest: Display oldest conversations first
   </Accordion>
-  <Accordion title="Conversation Fields">
-    - ID: Unique identifier for each user (auto-generated)
-    - Interactions: Number of user messages in the current chat
-    - Timestamp: Start time of the conversation
+  <Accordion title="Interaction-based Sorting">
+    - More: Sort by highest number of interactions
+    - Less: Sort by lowest number of interactions
+  </Accordion>
+  <Accordion title="Tag-based Filtering">
+    Filter conversations using custom or predefined tags
   </Accordion>
 </AccordionGroup>
 
-### Central Panel: Conversation Transcript
+### Conversation Fields
 
+Each conversation in the list displays the following information:
+
+**ID:** Unique identifier for each user (auto-generated)
+
+**Interactions:** Number of user messages in the current chat
+
+**Timestamp:** Start time of the conversation
+
+## Central Panel: Conversation Transcript
+<img src="/images/middle_section_shots.png" alt="Central Panel" width="700" />
+The central panel displays the selected conversation transcript and offers session management features.
 <Steps>
   <Step title="Session Selection">
-    Choose from multiple sessions at the top of the panel.
+    Choose from multiple sessions using the dropdown at the top of the panel.
   </Step>
   <Step title="Conversation Flow">
-    Review the back-and-forth between user and AI agent.
+    Review the back-and-forth messages between the user and AI agent.
   </Step>
   <Step title="Pin Session UI">
-    Click the pin icon to keep the session UI visible while scrolling.
+    Click the pin icon in the upper right to keep the session UI visible while scrolling.
   </Step>
 </Steps>
 <Note>
   A new session starts each time a user initiates a conversation on your website.
 </Note>
- ### Right Panel: Conversation Management
-Transcript URL
+## Right Panel: Conversation Management
+<img src="/images/right_section_shots.png" alt="Right Panel" width="400" />
+The right panel provides tools for managing and sharing conversations.
+### Transcript URL
 Share specific conversations easily with a unique URL.
 <Tip>
   If configured, URLs are hosted on your agency domain and will always be whitelabeled.
 </Tip>
-## Handoff Takeover
+### Handoff Takeover
 For information on live agent handoff, please refer to our Handoff Documentation.
-## Using Tags
+### Using Tags
 <AccordionGroup>
   <Accordion title="Creating Custom Tags">
     1. Click the '+' icon
